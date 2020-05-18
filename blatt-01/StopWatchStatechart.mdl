@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2"
+    ComputedModelVersion    "1.17"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -58,7 +58,7 @@ Model {
 	Width			[50]
 	Height			[50]
 	Filter			[9]
-	Minimized		"On"
+	Minimized		"Off"
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -75,10 +75,10 @@ Model {
 	  IsTabbed		  [1]
 	  ViewObjType		  "StateflowChart"
 	  LoadSaveID		  "1"
-	  Extents		  [1558.0, 814.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [140.59999999999991, 98.333333333333314]
-	  SceneRectInView	  [140.59999999999991, 98.333333333333314, 1246.4, 651.2]
+	  Extents		  [1381.0, 814.0]
+	  ZoomFactor		  [0.59999999999999987]
+	  Offset		  [726.57109963259859, -414.15209294339945]
+	  SceneRectInView	  [726.57109963259859, -414.15209294339945, 2301.666666666667, 1356.666666666667]
 	}
 	Object {
 	  $ObjectID		  6
@@ -86,10 +86,10 @@ Model {
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1820.0, 814.0]
-	  ZoomFactor		  [2.0]
-	  Offset		  [97.5, 69.999999999999972]
-	  SceneRectInView	  [97.5, 69.999999999999972, 910.0, 407.0]
+	  Extents		  [1689.0, 814.0]
+	  ZoomFactor		  [2.5]
+	  Offset		  [127.44880952380925, 75.329761904762051]
+	  SceneRectInView	  [127.44880952380925, 75.329761904762051, 675.6, 325.6]
 	}
 	PropName		"EditorsInfo"
       }
@@ -100,14 +100,14 @@ Model {
 	  $ObjectID		  7
 	  Type			  "GLUE2:PropertyInspector"
 	  ID			  "Property Inspector"
-	  Visible		  [1]
+	  Visible		  [0]
 	  CreateCallback	  ""
 	  UserData		  ""
 	  Floating		  [0]
 	  DockPosition		  "Right"
 	  Width			  [640]
 	  Height		  [480]
-	  Minimized		  "On"
+	  Minimized		  "Off"
 	}
 	Object {
 	  $ObjectID		  8
@@ -118,21 +118,18 @@ Model {
 	  UserData		  "0"
 	  Floating		  [0]
 	  DockPosition		  "Right"
-	  Width			  [254]
+	  Width			  [300]
 	  Height		  [847]
 	  Minimized		  "Unset"
 	}
 	PropName		"DockComponentsInfo"
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADa/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAAf//wAAAAEAAAECAAADa/wCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAeQAAA2sAAABjAP///wAAAAEAAAEwAAADa/wCA"
       "AAAAvsAAABCAEcATABVAEUAMgA6AEQARABHACAAQwBvAG0AcABvAG4AZQBuAHQALwBTAHkAbQBiAG8AbABNAGEAbgBhAGcAZQByAQAAAHkAAANrA"
       "AAAIAD////7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4Ac"
-      "wBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAGPAAAA2sAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAc"
-      "wBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzA"
-      "GkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AwAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAc"
-      "wBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAAAAAAD/////AAAAAAAAAAA="
+      "wBwAGUAYwB0AG8AcgAAAAI4AAABrAAAAawA////AAAFiwAAA2sAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAwAAAAA="
       Array {
 	Type			"Cell"
 	Dimension		0
@@ -149,9 +146,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lukas Bilal"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 14 20:30:33 2020"
-  RTWModifiedTimeStamp	  511388083
-  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  LastModifiedDate	  "Tue May 19 00:21:07 2020"
+  RTWModifiedTimeStamp	  511748417
+  ModelVersionFormat	  "1.%<AutoIncrement:17>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -198,7 +195,7 @@ Model {
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
-  EnablePacing		  off
+  EnablePacing		  on
   PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
@@ -268,10 +265,10 @@ Model {
 	  Description		  ""
 	  Components		  []
 	  StartTime		  "0.0"
-	  StopTime		  "10"
+	  StopTime		  "1000.0"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
-	  FixedStep		  "auto"
+	  FixedStep		  "1e-3"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
@@ -285,14 +282,14 @@ Model {
 	  RelTol		  "1e-3"
 	  EnableMultiTasking	  off
 	  ConcurrentTasks	  off
-	  Solver		  "VariableStepAuto"
-	  SolverName		  "VariableStepAuto"
+	  Solver		  "FixedStepAuto"
+	  SolverName		  "FixedStepAuto"
 	  SolverJacobianMethodControl "auto"
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Nonadaptive"
 	  AlgebraicLoopSolver	  "TrustRegion"
-	  SolverInfoToggleStatus  off
+	  SolverInfoToggleStatus  on
 	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
 	  PositivePriorityOrder	  off
@@ -975,7 +972,7 @@ Model {
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 0, 0, 0, 0 ]
+      ConfigPrmDlgPosition    [ 819, 254, 1719, 964 ]
       ExtraOptions	      ""
     }
     PropName		    "ConfigurationSets"
@@ -1052,13 +1049,92 @@ Model {
   }
   BlockParameterDefaults {
     Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
       BlockType		      Demux
       Outputs		      "4"
       DisplayOption	      "bar"
       BusSelectionMode	      off
     }
     Block {
-      BlockType		      Ground
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      IconDisplay	      "Port number"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      ManualSwitch
+      CurrentSetting	      "1"
+      varsize		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      IconDisplay	      "Port number"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      EnsureOutportIsVirtual  off
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+      MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected on
     }
     Block {
       BlockType		      S-Function
@@ -1109,7 +1185,27 @@ Model {
       IsWebBlockPanel	      off
     }
     Block {
-      BlockType		      Terminator
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      IsSimulinkFunction      off
+      FunctionVisibility      "global"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+      DisallowConstTsAndPrmTs off
+      InitialTriggerSignalState	"compatibility (no trigger on first evaluation)"
+      PortDimensions	      "-1"
+      TriggerSignalSampleTime "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      Interpolate	      on
     }
   }
   System {
@@ -1129,16 +1225,94 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "200"
+    ZoomFactor		    "250"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "1"
+    SIDHighWatermark	    "21"
     SimulinkSubDomain	    "Simulink"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 0"
+      SID		      "3"
+      Position		      [145, 225, 175, 255]
+      ZOrder		      4
+      Value		      "0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 1"
+      SID		      "4"
+      Position		      [145, 280, 175, 310]
+      ZOrder		      5
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 2"
+      SID		      "13"
+      Position		      [145, 345, 175, 375]
+      ZOrder		      14
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 3"
+      SID		      "15"
+      Position		      [145, 410, 175, 440]
+      ZOrder		      16
+      Value		      "0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display Minutes"
+      SID		      "6"
+      Ports		      [1]
+      Position		      [665, 245, 755, 275]
+      ZOrder		      7
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display Seconds"
+      SID		      "7"
+      Ports		      [1]
+      Position		      [665, 300, 755, 330]
+      ZOrder		      8
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch"
+      SID		      "5"
+      Position		      [245, 267, 275, 303]
+      ZOrder		      6
+      CurrentSetting	      "0"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch1"
+      SID		      "9"
+      Position		      [245, 352, 275, 388]
+      ZOrder		      10
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Pulse\nGenerator\n"
+      SID		      "2"
+      Ports		      [0, 1]
+      Position		      [145, 159, 175, 191]
+      ZOrder		      3
+      PulseType		      "Time based"
+      Period		      "1"
+      PulseWidth	      "5"
+    }
     Block {
       BlockType		      SubSystem
       Name		      "StopWatch"
       SID		      "1"
-      Ports		      []
-      Position		      [165, 114, 225, 166]
+      Ports		      [2, 3, 0, 1]
+      Position		      [345, 233, 605, 347]
       ZOrder		      2
       ErrorFcn		      "Stateflow.Translate.translate"
       PermitHierarchicalResolution "ExplicitOnly"
@@ -1164,67 +1338,219 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"96"
+	SIDHighWatermark	"110"
 	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "run"
+	  SID			  "1::101"
+	  Position		  [20, 101, 40, 119]
+	  ZOrder		  81
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "lap"
+	  SID			  "1::106"
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  86
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "input events"
+	  SID			  "1::97"
+	  Ports			  [0, 1]
+	  Position		  [20, 171, 40, 189]
+	  ZOrder		  77
+	  TriggerType		  "either"
+	  VariantControl	  "(inherit)"
+	  StatesWhenEnabling	  "held"
+	  ShowOutputPort	  on
+	}
 	Block {
 	  BlockType		  Demux
 	  Name			  " Demux "
 	  SID			  "1::94"
 	  Ports			  [1, 1]
-	  Position		  [270, 100, 320, 140]
+	  Position		  [270, 245, 320, 285]
 	  ZOrder		  74
 	  Outputs		  "1"
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  " Ground "
-	  SID			  "1::96"
-	  Position		  [20, 111, 40, 129]
-	  ZOrder		  76
+	  Port {
+	    PortNumber		    1
+	    Name		    "Restart"
+	  }
 	}
 	Block {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "1::93"
 	  Tag			  "Stateflow S-Function 3"
-	  Ports			  [1, 1]
-	  Position		  [180, 100, 230, 140]
+	  Ports			  [3, 3]
+	  Position		  [180, 120, 230, 200]
 	  ZOrder		  73
 	  FunctionName		  "sf_sfun"
-	  PortCounts		  "[1 1]"
+	  PortCounts		  "[3 3]"
 	  SFunctionDeploymentMode off
-	  EnableBusSupport	  off
+	  EnableBusSupport	  on
 	  SFcnIsStateOwnerBlock	  off
+	  Port {
+	    PortNumber		    2
+	    Name		    "minutes"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "seconds"
+	  }
 	}
 	Block {
-	  BlockType		  Terminator
-	  Name			  " Terminator "
-	  SID			  "1::95"
-	  Position		  [460, 111, 480, 129]
-	  ZOrder		  75
+	  BlockType		  Outport
+	  Name			  "minutes"
+	  SID			  "1::98"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  78
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "seconds"
+	  SID			  "1::99"
+	  Position		  [460, 136, 480, 154]
+	  ZOrder		  79
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Restart()"
+	  SID			  "1::110"
+	  Position		  [460, 171, 480, 189]
+	  ZOrder		  90
+	  Port			  "3"
 	}
 	Line {
-	  ZOrder		  4
-	  SrcBlock		  " Ground "
+	  ZOrder		  162
+	  SrcBlock		  "run"
 	  SrcPort		  1
 	  DstBlock		  " SFunction "
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  5
-	  SrcBlock		  " Demux "
+	  ZOrder		  163
+	  SrcBlock		  "lap"
 	  SrcPort		  1
-	  DstBlock		  " Terminator "
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "minutes"
+	  ZOrder		  164
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "minutes"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  6
+	  Name			  "seconds"
+	  ZOrder		  165
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  3
+	  DstBlock		  "seconds"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Restart"
+	  ZOrder		  166
+	  Labels		  [0, 0]
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  "Restart()"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  167
+	  SrcBlock		  "input events"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  168
 	  SrcBlock		  " SFunction "
 	  SrcPort		  1
 	  DstBlock		  " Demux "
 	  DstPort		  1
 	}
       }
+    }
+    Line {
+      ZOrder		      2
+      SrcBlock		      "Pulse\nGenerator\n"
+      SrcPort		      1
+      Points		      [295, 0]
+      DstBlock		      "StopWatch"
+      DstPort		      trigger
+    }
+    Line {
+      ZOrder		      3
+      SrcBlock		      "Constant 0"
+      SrcPort		      1
+      Points		      [26, 0; 0, 35]
+      DstBlock		      "Manual Switch"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      4
+      SrcBlock		      "Constant 1"
+      SrcPort		      1
+      DstBlock		      "Manual Switch"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      5
+      SrcBlock		      "Manual Switch"
+      SrcPort		      1
+      Points		      [16, 0; 0, -20]
+      DstBlock		      "StopWatch"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      6
+      SrcBlock		      "StopWatch"
+      SrcPort		      1
+      Points		      [34, 0; 0, 10]
+      DstBlock		      "Display Minutes"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      10
+      SrcBlock		      "StopWatch"
+      SrcPort		      2
+      Points		      [17, 0; 0, 25]
+      DstBlock		      "Display Seconds"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      15
+      SrcBlock		      "Constant 2"
+      SrcPort		      1
+      DstBlock		      "Manual Switch1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      16
+      SrcBlock		      "Constant 3"
+      SrcPort		      1
+      Points		      [29, 0; 0, -45]
+      DstBlock		      "Manual Switch1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      18
+      SrcBlock		      "Manual Switch1"
+      SrcPort		      1
+      Points		      [33, 0; 0, -50]
+      DstBlock		      "StopWatch"
+      DstPort		      2
     }
   }
 }
@@ -1238,109 +1564,237 @@ Stateflow {
     id			    1
     name		    "StopWatchStatechart"
     sfVersion		    80000032
-    firstTarget		    15
+    firstTarget		    44
   }
   chart {
     id			    2
     machine		    1
     name		    "StopWatch"
     windowPosition	    [199.5 216.75 417 348.75]
-    viewLimits		    [140.6 1387 98.333 749.533]
-    zoomFactor		    1.067
+    viewLimits		    [726.571 3028.238 -414.152 942.515]
+    zoomFactor		    2.222
     screen		    [1 1 3200 1200 1.25]
     treeNode		    [0 3 0 0]
     viewObj		    2
     visible		    1
     subviewS {
     }
-    ssIdHighWaterMark	    22
+    ssIdHighWaterMark	    140
     decomposition	    CLUSTER_CHART
     chartFileNumber	    3
     allowGlobalAccessToExportedFunctions 0
+    executeAtInitialization 1
     saturateOnIntegerOverflow 1
     userSpecifiedStateTransitionExecutionOrder 1
     disableImplicitCasting  1
     actionLanguage	    2
-    firstData		    9
-    firstTransition	    10
+    firstData		    29
+    firstEvent		    37
+    firstTransition	    40
   }
   state {
     id			    3
     labelString		    "Stopped"
-    position		    [417 121 811 86]
+    position		    [1094.1667 56.3417 889.3 315.225]
     fontSize		    18
     chart		    2
-    treeNode		    [2 0 0 4]
+    treeNode		    [2 13 0 5]
     subviewer		    2
     ssIdNumber		    1
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
+    eml {
+    }
+    firstTransition	    15
   }
   state {
     id			    4
-    labelString		    "Started"
-    position		    [394 336 834 280]
-    fontSize		    18
-    chart		    2
-    treeNode		    [2 5 3 0]
-    subviewer		    2
-    ssIdNumber		    4
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    firstTransition	    6
-  }
-  state {
-    id			    5
     labelString		    "Clock"
-    position		    [719 451 122 92]
+    position		    [1480.1667 740.9667 130 108]
     fontSize		    18
     chart		    2
-    treeNode		    [4 0 0 0]
+    treeNode		    [8 0 0 0]
     subviewer		    2
     ssIdNumber		    18
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
+    eml {
+    }
+  }
+  state {
+    id			    5
+    labelString		    "Started"
+    position		    [746.4333 594.5667 1722.4167 367.4575]
+    fontSize		    18
+    chart		    2
+    treeNode		    [2 9 3 0]
+    subviewer		    2
+    ssIdNumber		    4
+    type		    OR_STATE
+    decomposition	    SET_STATE
+    eml {
+    }
+  }
+  state {
+    id			    6
+    labelString		    "lab"
+    position		    [789.3667 743.2167 137.5 108.75]
+    fontSize		    12
+    chart		    2
+    treeNode		    [7 0 0 0]
+    subviewer		    2
+    ssIdNumber		    61
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+    }
+  }
+  state {
+    id			    7
+    labelString		    "Lab"
+    position		    [772.3667 697.5712 405.6667 177.1667]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 6 9 8]
+    subviewer		    2
+    ssIdNumber		    77
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    1
+    eml {
+    }
+    firstTransition	    21
+  }
+  state {
+    id			    8
+    labelString		    "Clock"
+    position		    [1206.0571 700.1962 672.8167 171.9167]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 4 7 0]
+    subviewer		    2
+    ssIdNumber		    78
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    2
+    eml {
+    }
+    firstTransition	    23
+  }
+  state {
+    id			    9
+    labelString		    "store_recall"
+    position		    [1917.7359 622.757 524.4 325.9951]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 10 0 7]
+    subviewer		    2
+    ssIdNumber		    94
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    3
+    firstTransition	    26
+  }
+  state {
+    id			    10
+    labelString		    "store"
+    position		    [2118.6692 673.0188 90 60]
+    fontSize		    12
+    chart		    2
+    treeNode		    [9 0 0 11]
+    subviewer		    2
+    ssIdNumber		    95
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    11
+    labelString		    "recall"
+    position		    [2118.6692 810.0854 90 60]
+    fontSize		    12
+    chart		    2
+    treeNode		    [9 0 10 0]
+    subviewer		    2
+    ssIdNumber		    97
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    12
+    labelString		    "Recall"
+    position		    [1654.8167 238.3538 105.5377 90.5714]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 14 0]
+    subviewer		    2
+    ssIdNumber		    117
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    13
+    labelString		    "Store"
+    position		    [1653.0881 83.1702 108.9949 92.9714]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 0 14]
+    subviewer		    2
+    ssIdNumber		    115
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    14
+    labelString		    "Restart"
+    position		    [1262.3905 181.8417 90 60]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 13 12]
+    subviewer		    2
+    ssIdNumber		    131
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
   }
   transition {
-    id			    6
+    id			    15
     labelString		    ""
-    labelPosition	    [746.857 436 0 0]
+    labelPosition	    [1702.888 65.644 0 0]
     fontSize		    12
     src {
-      intersection	      [0 0 1 0 746.8567 421 0 0]
+      intersection	      [0 0 1 0 1702.8877 59.9276 0 0]
     }
     dst {
-      id		      5
-      intersection	      [1 0 -1 0.2283 746.8567 451 0 0]
+      id		      13
+      intersection	      [1 0 -1 0.4569 1702.8877 83.1702 0 0]
     }
-    midPoint		    [746.8567 436]
+    midPoint		    [1702.8877 65.6436]
     chart		    2
-    dataLimits		    [744.457 749.257 421 451]
+    dataLimits		    [1700.488 1705.288 59.928 83.17]
     subviewer		    2
     drawStyle		    SMART
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
-    ssIdNumber		    19
-    linkNode		    [4 0 7]
+    ssIdNumber		    116
+    linkNode		    [3 0 16]
   }
   transition {
-    id			    7
-    labelString		    "clk [seconds == 59] /\n{\n  minutes = minutes + 1;\n  seconds = 0;\n}"
-    labelPosition	    [908.647 449.147 193.938 107]
-    fontSize		    18
+    id			    16
+    labelString		    "Restart"
+    labelPosition	    [1435.728 90.074 41.641 16]
+    fontSize		    12
     src {
-      id		      5
-      intersection	      [2 1 0 0.1413 841 464 0 0]
+      id		      13
+      intersection	      [4 -1 0 0.4868 1653.0881 130.8799 0 0]
     }
     dst {
-      id		      5
-      intersection	      [2 1 0 0.8152 841 526 0 0]
+      id		      14
+      intersection	      [1 0 -1 0.4971 1307.1287 181.8417 0 0]
     }
-    midPoint		    [896.6 492.6]
+    midPoint		    [1436.5313 108.7837]
     chart		    2
-    dataLimits		    [841 896.802 464 528.4]
+    dataLimits		    [1304.729 1653.088 108.117 181.842]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -1348,25 +1802,77 @@ Stateflow {
       sticky		      BOTH_STICK
     }
     executionOrder	    2
-    ssIdNumber		    21
-    linkNode		    [4 6 8]
+    ssIdNumber		    135
+    linkNode		    [3 15 17]
   }
   transition {
-    id			    8
-    labelString		    "clk [seconds < 59] /\n{\n  seconds = seconds + 1;\n}"
-    labelPosition	    [463 470.5 202 86]
-    fontSize		    18
+    id			    17
+    labelString		    "storeRecall /\n{\n  minutes_intern = 0;\n  seconds_intern = 0;\n  seconds_stored = 0;\n  minutes"
+    "_stored = 0;\n}"
+    labelPosition	    [1526.023 165.208 117 100]
+    fontSize		    12
     src {
-      id		      5
-      intersection	      [4 -1 0 0.7826 719 471 0 0]
+      id		      12
+      intersection	      [1 0 -1 0.1531 1670.973 238.3538 0 0]
     }
     dst {
-      id		      5
-      intersection	      [4 -1 0 0.1848 719 526 0 0]
+      id		      13
+      intersection	      [3 -0 1 0.8359 1670.973 176.1417 0 0]
     }
-    midPoint		    [671 498.5]
+    midPoint		    [1670.973 211.2477]
     chart		    2
-    dataLimits		    [670.879 719 471 528.4]
+    dataLimits		    [1668.573 1673.373 176.142 238.354]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    129
+    linkNode		    [3 16 18]
+  }
+  transition {
+    id			    18
+    labelString		    "storeRecall /\n{\n  minutes_intern = minutes_stored;\n  seconds_intern = seconds_stored;\n}"
+    labelPosition	    [1766.418 185.508 191.672 72]
+    fontSize		    12
+    src {
+      id		      13
+      intersection	      [3 0 1 0.1524 1745.473 176.1417 0 0]
+    }
+    dst {
+      id		      12
+      intersection	      [1 -0 -1 0.859 1745.473 238.3538 0 0]
+    }
+    midPoint		    [1745.473 203.2477]
+    chart		    2
+    dataLimits		    [1743.073 1747.873 176.142 238.354]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    128
+    linkNode		    [3 17 19]
+  }
+  transition {
+    id			    19
+    labelString		    "{\n  minutes_intern = 0;\n  seconds_intern = 0;\n  seconds_stored = 0;\n  minutes_stored = 0;\n "
+    " run = 1;\n}"
+    labelPosition	    [1136.581 233.671 117 100]
+    fontSize		    12
+    src {
+      id		      14
+      intersection	      [4 -1 0 0.7872 1262.3905 194.6092 0 0]
+    }
+    dst {
+      id		      14
+      intersection	      [4 -1 0 0.1372 1262.3905 233.6092 0 0]
+    }
+    midPoint		    [1228.6287 208.32]
+    chart		    2
+    dataLimits		    [1227.941 1262.39 194.609 236.009]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -1374,13 +1880,374 @@ Stateflow {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
-    ssIdNumber		    20
-    linkNode		    [4 7 0]
+    ssIdNumber		    139
+    linkNode		    [3 18 20]
+  }
+  transition {
+    id			    20
+    labelString		    "Restart"
+    labelPosition	    [1487.23 311.213 41.641 16]
+    fontSize		    12
+    src {
+      id		      12
+      intersection	      [4 -1 0 0.5032 1654.8167 283.3538 0 0]
+    }
+    dst {
+      id		      14
+      intersection	      [3 0 1 0.4612 1310.8784 241.8417 0 0]
+    }
+    midPoint		    [1439.6516 309.7936]
+    chart		    2
+    dataLimits		    [1308.478 1654.817 241.842 311.337]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      mode		      MIRROR_SLIDE
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    134
+    linkNode		    [3 19 0]
+  }
+  transition {
+    id			    21
+    labelString		    ""
+    labelPosition	    [861.474 728.217 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 -0 1 0 861.4738 713.2167 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [1 0 -1 0.5244 861.4738 743.2167 0 0]
+    }
+    midPoint		    [861.4738 728.2167]
+    chart		    2
+    dataLimits		    [859.074 863.874 713.217 743.217]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    76
+    linkNode		    [7 0 22]
+  }
+  transition {
+    id			    22
+    labelString		    "[lap] /\n{\n  seconds = seconds_intern;\n  minutes = minutes_intern;\n}"
+    labelPosition	    [982.188 766.575 151.672 72]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [2 1 0 0.2041 926.8667 765.4081 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [2 1 0 0.6975 926.8667 819.0748 0 0]
+    }
+    midPoint		    [974.8667 792.2415]
+    chart		    2
+    dataLimits		    [926.867 974.987 765.408 821.475]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      mode		      MIRROR_SLIDE
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    79
+    linkNode		    [7 21 0]
+  }
+  transition {
+    id			    23
+    labelString		    ""
+    labelPosition	    [1555.136 725.967 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 -0 1 0 1555.1359 710.9667 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [1 0 -1 0.5767 1555.1359 740.9667 0 0]
+    }
+    midPoint		    [1555.1359 725.9667]
+    chart		    2
+    dataLimits		    [1552.736 1557.536 710.967 740.967]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    102
+    linkNode		    [8 0 24]
+  }
+  transition {
+    id			    24
+    labelString		    "clk [seconds_intern < 59] /\n{\n  seconds_intern = seconds_intern + 1;\n}"
+    labelPosition	    [1214.717 771.214 311.938 86]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [4 -1 0 0.7546 1480.1667 767.4713 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [4 -1 0 0.1673 1480.1667 830.8998 0 0]
+    }
+    midPoint		    [1432.1667 799.1855]
+    chart		    2
+    dataLimits		    [1432.042 1480.167 767.471 833.3]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      mode		      MIRROR_SLIDE
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    57
+    linkNode		    [8 23 25]
+  }
+  transition {
+    id			    25
+    labelString		    "clk [seconds_intern == 59]\n{\n  minutes_intern = minutes_intern + 1;\n  seconds_intern = 0;\n}"
+    labelPosition	    [1667.227 768.557 303.875 107]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [2 1 0 0.2613 1610.1667 769.1855 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [2 1 0 0.7375 1610.1667 820.6141 0 0]
+    }
+    midPoint		    [1658.1667 794.8998]
+    chart		    2
+    dataLimits		    [1610.167 1658.286 769.185 823.014]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      mode		      MIRROR_SLIDE
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    58
+    linkNode		    [8 24 0]
+  }
+  transition {
+    id			    26
+    labelString		    ""
+    labelPosition	    [2163.003 655.019 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 2163.0025 649.0188 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [1 0 -1 0.4926 2163.0025 673.0188 0 0]
+    }
+    midPoint		    [2163.0025 655.0188]
+    chart		    2
+    dataLimits		    [2160.603 2165.403 649.019 673.019]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    96
+    linkNode		    [9 0 27]
+  }
+  transition {
+    id			    27
+    labelString		    "storeRecall /\n{\n  seconds_stored = seconds_intern;\n  minutes_stored = minutes_intern;\n}"
+    labelPosition	    [1941.679 737.657 191.672 72]
+    fontSize		    12
+    src {
+      id		      11
+      intersection	      [1 0 -1 0.2481 2141.0025 810.0854 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [3 -0 1 0.7519 2141.0025 733.0188 0 0]
+    }
+    midPoint		    [2141.0025 775.5521]
+    chart		    2
+    dataLimits		    [2138.603 2143.403 733.019 810.085]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    101
+    linkNode		    [9 26 28]
+  }
+  transition {
+    id			    28
+    labelString		    "storeRecall / \n{\n  seconds_intern = seconds_stored;\n  minutes_intern = minutes_stored;\n}"
+    labelPosition	    [2217.903 737.437 191.672 72]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [3 0 1 0.1815 2192.3359 733.0188 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [1 -0 -1 0.8185 2192.3359 810.0854 0 0]
+    }
+    midPoint		    [2192.3359 767.5521]
+    chart		    2
+    dataLimits		    [2189.936 2194.736 733.019 810.085]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    100
+    linkNode		    [9 27 0]
   }
   data {
-    id			    9
-    ssIdNumber		    16
-    name		    "data"
+    id			    29
+    ssIdNumber		    23
+    name		    "minutes"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT32_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "uint32"
+    linkNode		    [2 0 30]
+  }
+  data {
+    id			    30
+    ssIdNumber		    24
+    name		    "seconds"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "uint8"
+    linkNode		    [2 29 31]
+  }
+  data {
+    id			    31
+    ssIdNumber		    28
+    name		    "run"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "boolean"
+    linkNode		    [2 30 32]
+  }
+  data {
+    id			    32
+    ssIdNumber		    42
+    name		    "lap"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "boolean"
+    linkNode		    [2 31 33]
+  }
+  data {
+    id			    33
+    ssIdNumber		    31
+    name		    "minutes_intern"
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT32_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "uint32"
+    linkNode		    [2 32 34]
+  }
+  data {
+    id			    34
+    ssIdNumber		    30
+    name		    "seconds_intern"
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "uint8"
+    linkNode		    [2 33 35]
+  }
+  data {
+    id			    35
+    ssIdNumber		    91
+    name		    "seconds_stored"
     scope		    LOCAL_DATA
     machine		    1
     props {
@@ -1399,23 +2266,74 @@ Stateflow {
       }
     }
     dataType		    "Inherit: From definition in chart"
-    linkNode		    [2 0 0]
+    linkNode		    [2 34 36]
+  }
+  data {
+    id			    36
+    ssIdNumber		    92
+    name		    "minutes_stored"
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: From definition in chart"
+    linkNode		    [2 35 0]
+  }
+  event {
+    id			    37
+    ssIdNumber		    25
+    name		    "clk"
+    scope		    INPUT_EVENT
+    trigger		    RISING_EDGE_EVENT
+    machine		    1
+    linkNode		    [2 0 38]
+  }
+  event {
+    id			    38
+    ssIdNumber		    104
+    name		    "storeRecall"
+    scope		    INPUT_EVENT
+    trigger		    EITHER_EDGE_EVENT
+    machine		    1
+    linkNode		    [2 37 39]
+  }
+  event {
+    id			    39
+    ssIdNumber		    136
+    name		    "Restart"
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+    linkNode		    [2 38 0]
   }
   transition {
-    id			    10
+    id			    40
     labelString		    ""
-    labelPosition	    [456.435 106 0 0]
+    labelPosition	    [1534.904 31.007 0 0]
     fontSize		    12
     src {
-      intersection	      [0 0 1 0 456.4351 91 0 0]
+      intersection	      [0 0 1 0 1534.9037 20.6064 0 0]
     }
     dst {
       id		      3
-      intersection	      [1 0 -1 0.0486 456.4351 121 0 0]
+      intersection	      [1 0 -1 0.4956 1534.9037 56.3417 0 0]
     }
-    midPoint		    [456.4351 106]
+    midPoint		    [1534.9037 31.0071]
     chart		    2
-    dataLimits		    [454.035 458.835 91 121]
+    dataLimits		    [1532.504 1537.304 20.606 56.342]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -1423,48 +2341,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
-    linkNode		    [2 0 11]
+    linkNode		    [2 0 41]
   }
   transition {
-    id			    11
-    labelString		    ""
-    labelPosition	    [857.896 106 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 -0 1 0 857.8959 91 0 0]
-    }
-    dst {
-      id		      3
-      intersection	      [1 0 -1 0.5436 857.8959 121 0 0]
-    }
-    midPoint		    [857.8959 106]
-    chart		    2
-    dataLimits		    [855.496 860.296 91 121]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    2
-    ssIdNumber		    8
-    linkNode		    [2 10 12]
-  }
-  transition {
-    id			    12
-    labelString		    "[run] /\n{\n  minutes = 0;\n  seconds = 0;\n}"
-    labelPosition	    [600 214.478 114.5 107]
+    id			    41
+    labelString		    "[run]"
+    labelPosition	    [1294.167 430.077 37.984 23]
     fontSize		    18
     src {
       id		      3
-      intersection	      [3 0 1 0.799 580 207 0 0]
+      intersection	      [3 0 1 0.8167 1257.1667 371.5667 0 0]
     }
     dst {
-      id		      4
-      intersection	      [1 -0 -1 0.223 580 336 0 0]
+      id		      5
+      intersection	      [1 -0 -1 0.2965 1257.1667 594.5667 0 0]
     }
-    midPoint		    [580 267.5]
+    midPoint		    [1257.1667 479.0667]
     chart		    2
-    dataLimits		    [577.6 582.4 207 336]
+    dataLimits		    [1254.767 1259.567 371.567 594.567]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -1472,41 +2366,42 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    9
-    linkNode		    [2 11 13]
+    linkNode		    [2 40 42]
   }
   transition {
-    id			    13
+    id			    42
     labelString		    "[~run]"
-    labelPosition	    [1124 280.348 48.484 23]
+    labelPosition	    [1565.8 431.509 48.484 23]
     fontSize		    18
     src {
-      id		      4
-      intersection	      [1 0 -1 0.8261 1083 336 0 0]
+      id		      5
+      intersection	      [1 0 -1 0.46 1538.8167 594.5667 0 0]
     }
     dst {
       id		      3
-      intersection	      [3 -0 1 0.1788 1083 207 0 0]
+      intersection	      [3 -0 1 0.5 1538.8167 371.5667 0 0]
     }
-    midPoint		    [1083 275.5]
+    midPoint		    [1538.8167 487.0667]
     chart		    2
-    dataLimits		    [1080.6 1085.4 207 336]
+    dataLimits		    [1536.417 1541.217 371.567 594.567]
     subviewer		    2
     drawStyle		    SMART
     slide {
+      mode		      MIRROR_SLIDE
       sticky		      BOTH_STICK
     }
     executionOrder	    1
     ssIdNumber		    17
-    linkNode		    [2 12 0]
+    linkNode		    [2 41 0]
   }
   instance {
-    id			    14
+    id			    43
     machine		    1
     name		    "StopWatch"
     chart		    2
   }
   target {
-    id			    15
+    id			    44
     machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
