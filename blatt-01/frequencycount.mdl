@@ -1,12 +1,12 @@
 Model {
-  Name			  "StopWatchStatechart"
+  Name			  "frequencycount"
   Version		  10.1
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.21"
+    ComputedModelVersion    "1.30"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,15 +19,21 @@ Model {
     IsArchitectureModel	    0
     IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
-    NumExternalFileReferences 0
+    NumExternalFileReferences 1
+    ExternalFileReference {
+      Reference		      "simulink/Math\nOperations/Slider\nGain"
+      Path		      "frequencycount/Frequency (move slider)"
+      SID		      "4"
+      Type		      "LIBRARY_BLOCK"
+    }
     OrderedModelArguments   1
   }
   DiagnosticSuppressor	  "on"
-  AnimationPlugin	  "on"
   LogicAnalyzerPlugin	  "on"
-  SLCCPlugin		  "on"
   WebScopes_FoundationPlugin "on"
   NotesPlugin		  "on"
+  SLCCPlugin		  "on"
+  AnimationPlugin	  "on"
   EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -43,61 +49,47 @@ Model {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
     $ClassName		    "Simulink.BDWindowsInfo"
-    Object {
-      $PropName		      "WindowsInfo"
-      $ObjectID		      2
-      $ClassName	      "Simulink.WindowInfo"
-      IsActive		      [1]
-      Location		      [-8.0, -8.0, 1936.0, 1056.0]
+    Array {
+      Type		      "Simulink.WindowInfo"
+      Dimension		      2
       Object {
-	$PropName		"ModelBrowserInfo"
-	$ObjectID		3
-	$ClassName		"Simulink.ModelBrowserInfo"
-	Visible			[1]
-	DockPosition		"Left"
-	Width			[50]
-	Height			[50]
-	Filter			[9]
-	Minimized		"Off"
-      }
-      Object {
-	$PropName		"ExplorerBarInfo"
-	$ObjectID		4
-	$ClassName		"Simulink.ExplorerBarInfo"
-	Visible			[1]
-      }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
+	$ObjectID		2
+	IsActive		[0]
+	Location		[58.0, 108.0, 923.0, 525.0]
 	Object {
+	  $PropName		  "ModelBrowserInfo"
+	  $ObjectID		  3
+	  $ClassName		  "Simulink.ModelBrowserInfo"
+	  Visible		  [0]
+	  DockPosition		  "Left"
+	  Width			  [50]
+	  Height		  [50]
+	  Filter		  [9]
+	  Minimized		  "Unset"
+	}
+	Object {
+	  $PropName		  "ExplorerBarInfo"
+	  $ObjectID		  4
+	  $ClassName		  "Simulink.ExplorerBarInfo"
+	  Visible		  [1]
+	}
+	Object {
+	  $PropName		  "EditorsInfo"
 	  $ObjectID		  5
+	  $ClassName		  "Simulink.EditorInfo"
 	  IsActive		  [1]
 	  IsTabbed		  [1]
 	  ViewObjType		  "StateflowChart"
-	  LoadSaveID		  "1"
-	  Extents		  [1362.0, 814.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [475.53847952833689, -83.148977928236832]
-	  SceneRectInView	  [475.53847952833689, -83.148977928236832, 2270.0, 1356.6666666666667]
+	  LoadSaveID		  "5"
+	  Extents		  [869.0, 283.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	  SceneRectInView	  [0.0, 0.0, 0.0, 0.0]
 	}
 	Object {
+	  $PropName		  "DockComponentsInfo"
 	  $ObjectID		  6
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1689.0, 814.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [104.20833333333302, -66.4630933852423]
-	  SceneRectInView	  [104.20833333333302, -66.4630933852423, 1126.0, 542.66666666666663]
-	}
-	PropName		"EditorsInfo"
-      }
-      Array {
-	Type			"Simulink.DockComponentInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  7
+	  $ClassName		  "Simulink.DockComponentInfo"
 	  Type			  "GLUE2:PropertyInspector"
 	  ID			  "Property Inspector"
 	  Visible		  [0]
@@ -107,51 +99,112 @@ Model {
 	  DockPosition		  "Right"
 	  Width			  [640]
 	  Height		  [480]
-	  Minimized		  "Off"
-	}
-	Object {
-	  $ObjectID		  8
-	  Type			  "GLUE2:DDG Component"
-	  ID			  "SymbolManager"
-	  Visible		  [1]
-	  CreateCallback	  "Stateflow.Interface.Panel.createSymbolManagerComponent"
-	  UserData		  "0"
-	  Floating		  [0]
-	  DockPosition		  "Right"
-	  Width			  [319]
-	  Height		  [847]
 	  Minimized		  "Unset"
 	}
-	PropName		"DockComponentsInfo"
+	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
+	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
+	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCAAAAAfsAAABUAEcATABVA"
+	"EUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AA"
+	"ABrAD///8AAAOLAAABWAAAAAEAAAACAAAAAQAAAAL8AAAAAA=="
+	Array {
+	  Type			  "Cell"
+	  Dimension		  0
+	  PropName		  "PersistedApps"
+	}
+	WindowUuid		"c6edfae2-a30d-4c93-83b3-8f59ef4daf39"
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADa/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
-      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAeQAAA2sAAABjAP///wAAAAEAAAFDAAADa/wCA"
-      "AAAAvsAAABCAEcATABVAEUAMgA6AEQARABHACAAQwBvAG0AcABvAG4AZQBuAHQALwBTAHkAbQBiAG8AbABNAGEAbgBhAGcAZQByAQAAAHkAAANrA"
-      "AAAIAD////7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4Ac"
-      "wBwAGUAYwB0AG8AcgAAAAI4AAABrAAAAawA////AAAFeAAAA2sAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAwAAAAA="
-      Array {
-	Type			"Cell"
-	Dimension		0
-	PropName		"PersistedApps"
+      Object {
+	$ObjectID		7
+	IsActive		[1]
+	Location		[108.0, 208.0, 1720.0, 715.0]
+	Object {
+	  $PropName		  "ModelBrowserInfo"
+	  $ObjectID		  8
+	  $ClassName		  "Simulink.ModelBrowserInfo"
+	  Visible		  [0]
+	  DockPosition		  "Left"
+	  Width			  [50]
+	  Height		  [50]
+	  Filter		  [9]
+	  Minimized		  "Unset"
+	}
+	Object {
+	  $PropName		  "ExplorerBarInfo"
+	  $ObjectID		  9
+	  $ClassName		  "Simulink.ExplorerBarInfo"
+	  Visible		  [1]
+	}
+	Array {
+	  Type			  "Simulink.EditorInfo"
+	  Dimension		  2
+	  Object {
+	    $ObjectID		    10
+	    IsActive		    [1]
+	    IsTabbed		    [1]
+	    ViewObjType		    "SimulinkTopLevel"
+	    LoadSaveID		    "0"
+	    Extents		    [1666.0, 473.0]
+	    ZoomFactor		    [1.0]
+	    Offset		    [0.0, 0.0]
+	    SceneRectInView	    [0.0, 0.0, 1666.0, 473.0]
+	  }
+	  Object {
+	    $ObjectID		    11
+	    IsActive		    [0]
+	    IsTabbed		    [0]
+	    ViewObjType		    "StateflowChart"
+	    LoadSaveID		    "5"
+	    Extents		    [1666.0, 473.0]
+	    ZoomFactor		    [1.0]
+	    Offset		    [0.0, 0.0]
+	    SceneRectInView	    [0.0, 0.0, 0.0, 0.0]
+	  }
+	  PropName		  "EditorsInfo"
+	}
+	Object {
+	  $PropName		  "DockComponentsInfo"
+	  $ObjectID		  12
+	  $ClassName		  "Simulink.DockComponentInfo"
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "Unset"
+	}
+	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
+	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
+	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCAAAAAfsAAABUAEcATABVA"
+	"EUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AA"
+	"ABrAD///8AAAaoAAACFgAAAAEAAAACAAAAAQAAAAL8AAAAAA=="
+	Array {
+	  Type			  "Cell"
+	  Dimension		  0
+	  PropName		  "PersistedApps"
+	}
+	WindowUuid		"bfcfee72-008a-4a3c-9ee1-4a37259bcf05"
       }
-      WindowUuid	      "0b82776b-3568-4091-8b56-551a033ff4d9"
+      PropName		      "WindowsInfo"
     }
-    BDUuid		    "e8f2f114-d529-44c8-a46f-a498390fb247"
+    BDUuid		    "07be175a-0a0b-4ed0-b1b3-927aaf3c4f0a"
   }
   HideAutomaticNames	  on
-  Created		  "Thu May 14 16:27:16 2020"
-  Creator		  "Lukas Bilal"
+  Created		  "Tue Feb 18 15:25:00 2003"
+  Creator		  "mf"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Lukas Bilal"
+  LastModifiedBy	  "Admin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 20 10:21:14 2020"
-  RTWModifiedTimeStamp	  511870841
-  ModelVersionFormat	  "1.%<AutoIncrement:21>"
+  LastModifiedDate	  "Sat May 09 15:03:47 2020"
+  RTWModifiedTimeStamp	  272801274
+  ModelVersionFormat	  "1.%<AutoIncrement:30>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
-  LibraryLinkDisplay	  "disabled"
+  LibraryLinkDisplay	  "none"
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
@@ -195,7 +248,7 @@ Model {
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
-  EnablePacing		  on
+  EnablePacing		  off
   PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
@@ -206,20 +259,19 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    9
+    $ObjectID		    13
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "StopWatchStatechart"
-    overrideMode_	    [0.0]
+    model_		    "frequencycount"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "StopWatchStatechart"
+      Cell		      "frequencycount"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      []
+      Cell		      ""
       PropName		      "logAsSpecifiedByModelsSSIDs_"
     }
   }
@@ -243,7 +295,7 @@ Model {
   ExtModeArmWhenConnect	  on
   ExtModeSkipDownloadWhenConnect off
   ExtModeLogAll		  on
-  ExtModeAutoUpdateStatusClock on
+  ExtModeAutoUpdateStatusClock off
   ShowModelReferenceBlockVersion off
   ShowModelReferenceBlockIO off
   OrderedModelArguments	  on
@@ -251,7 +303,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      10
+      $ObjectID		      14
       Version		      "20.0.1"
       DisabledProps	      []
       Description	      ""
@@ -259,16 +311,16 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  11
+	  $ObjectID		  15
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Components		  []
 	  StartTime		  "0.0"
-	  StopTime		  "1000.0"
+	  StopTime		  "2.5"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
-	  FixedStep		  "1e-3"
+	  FixedStep		  "5e-6"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
@@ -279,17 +331,17 @@ Model {
 	  MaxStep		  "auto"
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
-	  RelTol		  "1e-3"
-	  EnableMultiTasking	  off
+	  RelTol		  "1e-4"
+	  EnableMultiTasking	  on
 	  ConcurrentTasks	  off
-	  Solver		  "FixedStepAuto"
-	  SolverName		  "FixedStepAuto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
 	  SolverJacobianMethodControl "auto"
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Nonadaptive"
 	  AlgebraicLoopSolver	  "TrustRegion"
-	  SolverInfoToggleStatus  on
+	  SolverInfoToggleStatus  off
 	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
 	  PositivePriorityOrder	  off
@@ -302,7 +354,7 @@ Model {
 	  ODENIntegrationMethod	  "ode3"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  12
+	  $ObjectID		  16
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -311,14 +363,14 @@ Model {
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
 	  InitialState		  "xInitial"
-	  LimitDataPoints	  off
+	  LimitDataPoints	  on
 	  MaxDataPoints		  "1000"
 	  LoadExternalInput	  off
 	  LoadInitialState	  off
 	  SaveFinalState	  off
 	  SaveOperatingPoint	  off
-	  SaveFormat		  "Dataset"
-	  SignalLoggingSaveFormat "Dataset"
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
 	  SaveOutput		  on
 	  SaveState		  off
 	  SignalLogging		  on
@@ -328,11 +380,11 @@ Model {
 	  StreamToWorkspace	  off
 	  StreamVariableName	  "streamout"
 	  SaveTime		  on
-	  ReturnWorkspaceOutputs  on
+	  ReturnWorkspaceOutputs  off
 	  StateSaveName		  "xout"
 	  TimeSaveName		  "tout"
 	  OutputSaveName	  "yout"
-	  SignalLoggingName	  "logsout"
+	  SignalLoggingName	  "sigsOut"
 	  DSMLoggingName	  "dsmout"
 	  OutputOption		  "RefineOutputTimes"
 	  OutputTimes		  "[]"
@@ -344,7 +396,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  13
+	  $ObjectID		  17
 	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
@@ -363,7 +415,7 @@ Model {
 	  Description		  ""
 	  Components		  []
 	  BlockReduction	  on
-	  BooleanDataType	  on
+	  BooleanDataType	  off
 	  ConditionallyExecuteInputs on
 	  DefaultParameterBehavior "Tunable"
 	  UseDivisionForNetSlopeComputation "off"
@@ -387,7 +439,7 @@ Model {
 	  MemcpyThreshold	  64
 	  PassReuseOutputArgsAs	  "Structure reference"
 	  PassReuseOutputArgsThreshold 12
-	  ExpressionDepthLimit	  128
+	  ExpressionDepthLimit	  2147483647
 	  LocalBlockOutputs	  on
 	  RollThreshold		  5
 	  StateBitsets		  off
@@ -399,7 +451,7 @@ Model {
 	  NoFixptDivByZeroProtection off
 	  EfficientFloat2IntCast  off
 	  EfficientMapNaN2IntZero on
-	  LifeSpan		  "auto"
+	  LifeSpan		  "inf"
 	  MaxStackSize		  "Inherit from target"
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "off"
@@ -418,7 +470,7 @@ Model {
 	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  14
+	  $ObjectID		  18
 	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
@@ -440,13 +492,13 @@ Model {
 	  AlgebraicLoopMsg	  "warning"
 	  ArtificialAlgebraicLoopMsg "warning"
 	  SaveWithDisabledLinksMsg "warning"
-	  SaveWithParameterizedLinksMsg	"warning"
+	  SaveWithParameterizedLinksMsg	"none"
 	  CheckSSInitialOutputMsg on
-	  UnderspecifiedInitializationDetection	"Simplified"
-	  MergeDetectMultiDrivingBlocksExec "error"
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
 	  CheckExecutionContextPreStartOutputMsg off
 	  CheckExecutionContextRuntimeOutputMsg	off
-	  SignalResolutionControl "UseLocalSettings"
+	  SignalResolutionControl "TryResolveAllWithWarning"
 	  BlockPriorityViolationMsg "warning"
 	  MinStepSizeMsg	  "warning"
 	  TimeAdjustmentMsg	  "none"
@@ -455,8 +507,8 @@ Model {
 	  IgnoredZcDiagnostic	  "warning"
 	  SolverPrmCheckMsg	  "none"
 	  InheritedTsInSrcMsg	  "warning"
-	  MultiTaskDSMMsg	  "error"
-	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
 	  MultiTaskRateTransMsg	  "error"
 	  SingleTaskRateTransMsg  "none"
 	  TasksWithSamePriorityMsg "warning"
@@ -498,7 +550,7 @@ Model {
 	  ModelReferenceDataLoggingMessage "warning"
 	  ModelReferenceSymbolNameMessage "warning"
 	  ModelReferenceExtraNoncontSigs "error"
-	  StateNameClashWarn	  "none"
+	  StateNameClashWarn	  "warning"
 	  OperatingPointInterfaceChecksumMismatchMsg "warning"
 	  NonCurrentReleaseOperatingPointMsg "error"
 	  ChecksumConsistencyForSSReuse	"none"
@@ -514,9 +566,9 @@ Model {
 	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
 	  BlockIODiagnostic	  "none"
 	  SFUnusedDataAndEventsDiag "warning"
-	  SFUnexpectedBacktrackingDiag "error"
+	  SFUnexpectedBacktrackingDiag "warning"
 	  SFInvalidInputDataAccessInChartInitDiag "warning"
-	  SFNoUnconditionalDefaultTransitionDiag "error"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
 	  SFTransitionOutsideNaturalParentDiag "warning"
 	  SFUnreachableExecutionPathDiag "warning"
 	  SFUndirectedBroadcastEventsDiag "warning"
@@ -524,7 +576,7 @@ Model {
 	  SFOutputUsedAsStateInMooreChartDiag "error"
 	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
 	  SFSelfTransitionDiag	  "warning"
-	  SFExecutionAtInitializationDiag "warning"
+	  SFExecutionAtInitializationDiag "none"
 	  SFMachineParentedDataDiag "warning"
 	  IntegerSaturationMsg	  "warning"
 	  AllowedUnitSystems	  "all"
@@ -536,10 +588,10 @@ Model {
 	  UnitDatabase		  ""
 	  UnderSpecifiedDimensionMsg "none"
 	  DebugExecutionForFMUViaOutOfProcess off
-	  ArithmeticOperatorsInVariantConditions "error"
+	  ArithmeticOperatorsInVariantConditions "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  15
+	  $ObjectID		  19
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -551,17 +603,17 @@ Model {
 	  ProdBitPerLongLong	  64
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
-	  ProdBitPerPointer	  64
-	  ProdBitPerSizeT	  64
-	  ProdBitPerPtrDiffT	  64
+	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
 	  ProdLargestAtomicInteger "Char"
-	  ProdLargestAtomicFloat  "Float"
-	  ProdIntDivRoundTo	  "Zero"
-	  ProdEndianess		  "LittleEndian"
-	  ProdWordSize		  64
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
 	  ProdShiftRightIntArith  on
 	  ProdLongLongMode	  off
-	  ProdHWDeviceType	  "Intel->x86-64 (Windows64)"
+	  ProdHWDeviceType	  "32-bit Generic"
 	  TargetBitPerChar	  8
 	  TargetBitPerShort	  16
 	  TargetBitPerInt	  32
@@ -582,14 +634,14 @@ Model {
 	  TargetPreprocMaxBitsSint 32
 	  TargetPreprocMaxBitsUint 32
 	  TargetHWDeviceType	  "Specified"
-	  TargetUnknown		  off
+	  TargetUnknown		  on
 	  ProdEqTarget		  on
 	  UseEmbeddedCoderFeatures on
 	  UseSimulinkCoderFeatures on
 	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  16
+	  $ObjectID		  20
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -605,11 +657,11 @@ Model {
 	  ModelDependencies	  ""
 	  ModelReferencePassRootInputsByReference on
 	  ModelReferenceMinAlgLoopOccurrences off
-	  PropagateSignalLabelsOutOfModel on
+	  PropagateSignalLabelsOutOfModel off
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  17
+	  $ObjectID		  21
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -628,8 +680,8 @@ Model {
 	  SFSimEcho		  on
 	  SimCtrlC		  on
 	  SimIntegrity		  on
-	  SimUseLocalCustomCode	  on
-	  SimParseCustomCode	  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  off
 	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
@@ -640,11 +692,11 @@ Model {
 	  MATLABDynamicMemAllocThreshold 65536
 	  CustomCodeFunctionArrayLayout	[]
 	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
-	  CustomCodeUndefinedFunction "FilterOut"
+	  CustomCodeUndefinedFunction "UseInterfaceOnly"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  18
+	  $ObjectID		  22
 	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
@@ -659,12 +711,12 @@ Model {
 	    Cell		    "GenerateWebview"
 	    Cell		    "GenerateCodeMetricsReport"
 	    Cell		    "GenerateCodeReplacementReport"
-	    Cell		    "GenerateMissedCodeReplacementReport"
 	    Cell		    "GenerateErtSFunction"
 	    Cell		    "CreateSILPILBlock"
 	    Cell		    "CodeExecutionProfiling"
 	    Cell		    "CodeProfilingSaveOptions"
 	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "GenerateMissedCodeReplacementReport"
 	    PropName		    "DisabledProps"
 	  }
 	  Description		  ""
@@ -688,7 +740,7 @@ Model {
 	  TLCDebug		  off
 	  TLCCoverage		  off
 	  TLCAssert		  off
-	  RTWUseLocalCustomCode	  on
+	  RTWUseLocalCustomCode	  off
 	  RTWUseSimCustomCode	  off
 	  CustomSourceCode	  ""
 	  CustomHeaderCode	  ""
@@ -733,14 +785,13 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      19
+	      $ObjectID		      23
 	      Version		      "20.0.1"
 	      Array {
 		Type			"Cell"
 		Dimension		28
 		Cell			"IgnoreCustomStorageClasses"
 		Cell			"IgnoreTestpoints"
-		Cell			"BlockCommentType"
 		Cell			"InsertBlockDesc"
 		Cell			"InsertPolySpaceComments"
 		Cell			"SFDataObjDesc"
@@ -756,16 +807,17 @@ Model {
 		Cell			"CustomSymbolStrType"
 		Cell			"CustomSymbolStrField"
 		Cell			"CustomSymbolStrFcn"
-		Cell			"CustomSymbolStrModelFcn"
 		Cell			"CustomSymbolStrFcnArg"
 		Cell			"CustomSymbolStrBlkIO"
 		Cell			"CustomSymbolStrTmpVar"
 		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		Cell			"BlockCommentType"
+		Cell			"CustomSymbolStrModelFcn"
 		Cell			"CustomSymbolStrUtil"
 		Cell			"CustomSymbolStrEmxType"
 		Cell			"CustomSymbolStrEmxFcn"
 		Cell			"CustomUserTokenString"
-		Cell			"ReqsInCode"
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
@@ -810,7 +862,7 @@ Model {
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
 	      BlockCommentType	      "BlockPathComment"
-	      StateflowObjectComments off
+	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
 	      InternalIdentifierFile  ""
@@ -823,27 +875,29 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      20
+	      $ObjectID		      24
 	      Version		      "20.0.1"
 	      Array {
 		Type			"Cell"
-		Dimension		16
+		Dimension		18
+		Cell			"GeneratePreprocessorConditionals"
 		Cell			"IncludeMdlTerminateFcn"
+		Cell			"PreserveStateflowLocalDataDimensions"
 		Cell			"SuppressErrorStatus"
 		Cell			"ERTCustomFileBanners"
 		Cell			"GenerateSampleERTMain"
-		Cell			"ExistingSharedCode"
 		Cell			"GenerateTestInterfaces"
 		Cell			"ModelStepFunctionPrototypeControlCompliant"
-		Cell			"GenerateAllocFcn"
+		Cell			"CPPClassGenCompliant"
+		Cell			"SupportNonInlinedSFcns"
 		Cell			"PurelyIntegerCode"
 		Cell			"SupportComplex"
 		Cell			"SupportAbsoluteTime"
 		Cell			"SupportContinuousTime"
-		Cell			"SupportNonInlinedSFcns"
+		Cell			"GenerateAllocFcn"
+		Cell			"ExistingSharedCode"
 		Cell			"RemoveDisableFunc"
 		Cell			"RemoveResetFunc"
-		Cell			"PreserveStateflowLocalDataDimensions"
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
@@ -852,7 +906,7 @@ Model {
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
 	      GenFloatMathFcnCalls    "NOT IN USE"
-	      TargetLangStandard      "C99 (ISO)"
+	      TargetLangStandard      "C89/C90 (ANSI)"
 	      CodeReplacementLibrary  "None"
 	      UtilityFuncGeneration   "Auto"
 	      MultiwordTypeDef	      "System defined"
@@ -868,7 +922,7 @@ Model {
 	      CompOptLevelCompliant   on
 	      ConcurrentExecutionCompliant on
 	      IncludeMdlTerminateFcn  on
-	      CombineOutputUpdateFcns on
+	      CombineOutputUpdateFcns off
 	      CombineSignalStateStructs	off
 	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
@@ -894,7 +948,7 @@ Model {
 	      CPPClassGenCompliant    on
 	      AutosarCompliant	      off
 	      MDXCompliant	      off
-	      GRTInterface	      off
+	      GRTInterface	      on
 	      GenerateAllocFcn	      off
 	      UseToolchainInfoCompliant	on
 	      GenerateSharedConstants on
@@ -928,7 +982,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  21
+	  $ObjectID		  25
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -941,15 +995,15 @@ Model {
 	  CovPath		  "/"
 	  CovSaveName		  "covdata"
 	  CovCompData		  ""
-	  CovMetricSettings	  "dwe"
+	  CovMetricSettings	  "dw"
 	  CovFilter		  ""
 	  CovHTMLOptions	  ""
 	  CovNameIncrementing	  off
-	  CovHtmlReporting	  off
+	  CovHtmlReporting	  on
 	  CovForceBlockReductionOff on
 	  CovEnableCumulative	  on
-	  CovSaveCumulativeToWorkspaceVar off
-	  CovSaveSingleToWorkspaceVar off
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
 	  CovCumulativeVarName	  "covCumulativeData"
 	  CovCumulativeReport	  off
 	  CovSaveOutputData	  on
@@ -959,7 +1013,7 @@ Model {
 	  CovReportOnPause	  on
 	  CovModelRefEnable	  "off"
 	  CovModelRefExcluded	  ""
-	  CovExternalEMLEnable	  on
+	  CovExternalEMLEnable	  off
 	  CovSFcnEnable		  on
 	  CovBoundaryAbsTol	  1e-05
 	  CovBoundaryRelTol	  0.01
@@ -972,18 +1026,18 @@ Model {
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 819, 254, 1719, 964 ]
+      ConfigPrmDlgPosition    [ 200, 85, 1080, 715 ]
       ExtraOptions	      ""
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    10
+    $ObjectID		    14
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    22
+    $ObjectID		    26
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1006,8 +1060,8 @@ Model {
     BlockMirror		    off
   }
   AnnotationDefaults {
-    HorizontalAlignment	    "left"
-    VerticalAlignment	    "top"
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
     ForegroundColor	    "black"
     BackgroundColor	    "white"
     DropShadow		    off
@@ -1079,11 +1133,18 @@ Model {
       VectorParams1D	      on
     }
     Block {
-      BlockType		      Display
-      Format		      "short"
-      Decimation	      "10"
-      Floating		      off
-      Lockdown		      off
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
       SampleTime	      "-1"
     }
     Block {
@@ -1107,10 +1168,22 @@ Model {
       Interpolate	      on
     }
     Block {
-      BlockType		      ManualSwitch
-      CurrentSetting	      "1"
-      varsize		      off
-      SampleTime	      "-1"
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      WrapState		      off
+      WrappedStateUpperValue  "pi"
+      WrappedStateLowerValue  "-pi"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
     }
     Block {
       BlockType		      Mux
@@ -1145,11 +1218,24 @@ Model {
       VectorParamsAs1DForOutWhenUnconnected on
     }
     Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+      RndMeth		      "Nearest"
+    }
+    Block {
       BlockType		      S-Function
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
       MultiThreadCoSim	      "auto"
+    }
+    Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
     }
     Block {
       BlockType		      SubSystem
@@ -1218,308 +1304,242 @@ Model {
       OutDataTypeStr	      "Inherit: auto"
       Interpolate	      on
     }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      ApproximationMethod     "None"
+      NumberOfIterations      "11"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
   }
   System {
-    Name		    "StopWatchStatechart"
-    Location		    [-8, -8, 1928, 1048]
-    Open		    off
+    Name		    "frequencycount"
+    Location		    [108, 208, 1828, 923]
+    Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
-    ModelBrowserVisibility  on
+    ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
     PaperOrientation	    "landscape"
     PaperPositionMode	    "auto"
-    PaperType		    "usletter"
-    PaperUnits		    "inches"
-    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "34"
+    SIDHighWatermark	    "14"
     SimulinkSubDomain	    "Simulink"
     Block {
-      BlockType		      Constant
-      Name		      "Constant 0"
-      SID		      "3"
-      Position		      [145, 225, 175, 255]
-      ZOrder		      4
-      Value		      "0"
-      OutDataTypeStr	      "boolean"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant 1"
-      SID		      "4"
-      Position		      [145, 280, 175, 310]
-      ZOrder		      5
-      OutDataTypeStr	      "boolean"
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display Minutes"
-      SID		      "6"
-      Ports		      [1]
-      Position		      [665, 245, 755, 275]
-      ZOrder		      7
-      Decimation	      "1"
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display Seconds"
-      SID		      "7"
-      Ports		      [1]
-      Position		      [665, 300, 755, 330]
-      ZOrder		      8
-      Decimation	      "1"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Lap = 0"
-      SID		      "15"
-      Position		      [145, 410, 175, 440]
-      ZOrder		      16
-      Value		      "0"
-      OutDataTypeStr	      "boolean"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Lap = 1"
-      SID		      "13"
-      Position		      [145, 345, 175, 375]
-      ZOrder		      14
-      OutDataTypeStr	      "boolean"
-    }
-    Block {
-      BlockType		      ManualSwitch
-      Name		      "Manual Switch"
-      SID		      "5"
-      Position		      [245, 267, 275, 303]
-      ZOrder		      6
-      CurrentSetting	      "0"
-    }
-    Block {
-      BlockType		      ManualSwitch
-      Name		      "Manual Switch1"
-      SID		      "9"
-      Position		      [245, 352, 275, 388]
-      ZOrder		      10
-    }
-    Block {
-      BlockType		      ManualSwitch
-      Name		      "Manual Switch2"
-      SID		      "31"
-      Position		      [245, 87, 275, 123]
-      ZOrder		      26
-      CurrentSetting	      "0"
-    }
-    Block {
-      BlockType		      ManualSwitch
-      Name		      "Manual Switch3"
-      SID		      "34"
-      Position		      [245, -23, 275, 13]
-      ZOrder		      29
-    }
-    Block {
-      BlockType		      Mux
-      Name		      "Mux"
-      SID		      "24"
-      Ports		      [3, 1]
-      Position		      [345, 146, 350, 184]
-      ZOrder		      19
-      Inputs		      "3"
-      DisplayOption	      "bar"
-    }
-    Block {
       BlockType		      DiscretePulseGenerator
-      Name		      "Pulse\nGenerator\n"
-      SID		      "2"
+      Name		      "1 ms\nclock"
+      SID		      "1"
       Ports		      [0, 1]
-      Position		      [145, 159, 175, 191]
-      ZOrder		      3
+      Position		      [622, 300, 668, 330]
+      ZOrder		      -1
+      BlockRotation	      270
+      NameLocation	      "left"
       PulseType		      "Time based"
-      Period		      "1"
-      PulseWidth	      "5"
+      Period		      "1e-3"
+      PulseWidth	      "50"
     }
     Block {
       BlockType		      Constant
-      Name		      "Reset active"
-      SID		      "32"
-      Position		      [145, -65, 175, -35]
-      ZOrder		      27
-      Value		      "0"
-      OutDataTypeStr	      "double"
+      Name		      "Constant"
+      SID		      "2"
+      Position		      [103, 15, 127, 35]
+      ZOrder		      -2
+      BlockRotation	      270
+      BlockMirror	      on
+      NameLocation	      "left"
+      ShowName		      off
     }
     Block {
-      BlockType		      Constant
-      Name		      "Reset inactive"
-      SID		      "33"
-      Position		      [145, -10, 175, 20]
-      ZOrder		      28
-      OutDataTypeStr	      "double"
+      BlockType		      Scope
+      Name		      "Freq"
+      SID		      "3"
+      Ports		      [1]
+      Position		      [475, 435, 515, 485]
+      ZOrder		      -3
+      BlockRotation	      270
+      BlockMirror	      on
+      NameLocation	      "left"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','StructureWithTime',"
+      "'DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'S"
+      "erializedDisplays',{struct('MinYLimReal','0','MaxYLimReal','500','YLabelReal','','MinYLimMag','0','MaxYLimMag','"
+      "10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',"
+      "[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 "
+      "0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;"
+      "0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Ma"
+      "genta: actual RPM; Yellow: measured RPM','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,"
+      "'LineNames',{{[]}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','0','MaxYLi"
+      "mReal','500','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid',true,'YGrid',tr"
+      "ue,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745098039"
+      "22],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607843137"
+      "2549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058823529411"
+      "7647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Magenta: actual RPM; Yellow: measured RPM','LineProper"
+      "tiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)"
+      "),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurem"
+      "ents',true,'Version','2020a')),'Version','2020a','Location',[951 329 1275 568],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Frequency\n(move slider)"
+      SID		      "4"
+      Ports		      [1, 1]
+      Position		      [80, 115, 150, 140]
+      ZOrder		      -4
+      BlockRotation	      270
+      BlockMirror	      on
+      NameLocation	      "right"
+      LibraryVersion	      "1.465"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      SourceProductBaseCode   "SL"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      ContentPreviewEnabled   off
+      gain		      "100"
+      low		      "1"
+      high		      "500"
     }
     Block {
       BlockType		      SubSystem
-      Name		      "StopWatch"
-      SID		      "1"
-      Ports		      [2, 2, 0, 1]
-      Position		      [345, 235, 605, 350]
-      ZOrder		      2
+      Name		      "Frequency counter"
+      SID		      "5"
+      Ports		      [1, 1, 0, 1]
+      Position		      [545, 113, 745, 267]
+      ZOrder		      -5
+      ForegroundColor	      "blue"
+      BackgroundColor	      "yellow"
+      NameLocation	      "top"
       ErrorFcn		      "Stateflow.Translate.translate"
       PermitHierarchicalResolution "ExplicitOnly"
       TreatAsAtomicUnit	      on
       RequestExecContextInheritance off
       SFBlockType	      "Chart"
-      ContentPreviewEnabled   on
       System {
-	Name			"StopWatch"
-	Location		[-8, -8, 1928, 1048]
+	Name			"Frequency counter"
+	Location		[108, 208, 1828, 923]
 	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	on
+	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
 	PaperPositionMode	"auto"
-	PaperType		"usletter"
-	PaperUnits		"inches"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"111"
+	SIDHighWatermark	"13"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
-	  Name			  "run"
-	  SID			  "1::101"
+	  Name			  "Signal"
+	  SID			  "5::1"
 	  Position		  [20, 101, 40, 119]
-	  ZOrder		  81
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "lap"
-	  SID			  "1::106"
-	  Position		  [20, 136, 40, 154]
-	  ZOrder		  86
-	  Port			  "2"
+	  ZOrder		  -1
 	}
 	Block {
 	  BlockType		  TriggerPort
-	  Name			  "input events"
-	  SID			  "1::97"
+	  Name			  "clk"
+	  SID			  "5::2"
 	  Ports			  [0, 1]
-	  Position		  [20, 171, 40, 189]
-	  ZOrder		  77
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  -2
 	  VariantControl	  "(inherit)"
-	  StatesWhenEnabling	  "held"
 	  ShowOutputPort	  on
 	}
 	Block {
 	  BlockType		  Demux
 	  Name			  " Demux "
-	  SID			  "1::94"
+	  SID			  "5::12"
 	  Ports			  [1, 1]
 	  Position		  [270, 230, 320, 270]
-	  ZOrder		  74
+	  ZOrder		  6
 	  Outputs		  "1"
 	}
 	Block {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
-	  SID			  "1::93"
-	  Tag			  "Stateflow S-Function 3"
-	  Ports			  [3, 3]
-	  Position		  [180, 120, 230, 200]
-	  ZOrder		  73
+	  SID			  "5::11"
+	  Tag			  "Stateflow S-Function 1"
+	  Ports			  [2, 2]
+	  Position		  [180, 100, 230, 160]
+	  ZOrder		  5
 	  FunctionName		  "sf_sfun"
-	  PortCounts		  "[3 3]"
+	  PortCounts		  "[2 2]"
 	  SFunctionDeploymentMode off
-	  EnableBusSupport	  on
+	  EnableBusSupport	  off
 	  SFcnIsStateOwnerBlock	  off
 	  Port {
 	    PortNumber		    2
-	    Name		    "minutes"
-	  }
-	  Port {
-	    PortNumber		    3
-	    Name		    "seconds"
+	    Name		    "Measurement"
 	  }
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  " Terminator "
-	  SID			  "1::111"
+	  SID			  "5::13"
 	  Position		  [460, 241, 480, 259]
-	  ZOrder		  91
+	  ZOrder		  7
 	}
 	Block {
 	  BlockType		  Outport
-	  Name			  "minutes"
-	  SID			  "1::98"
+	  Name			  "Measurement"
+	  SID			  "5::6"
 	  Position		  [460, 101, 480, 119]
-	  ZOrder		  78
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "seconds"
-	  SID			  "1::99"
-	  Position		  [460, 136, 480, 154]
-	  ZOrder		  79
-	  Port			  "2"
+	  ZOrder		  -6
 	}
 	Line {
-	  ZOrder		  169
-	  SrcBlock		  "run"
+	  ZOrder		  6
+	  SrcBlock		  "Signal"
 	  SrcPort		  1
+	  Points		  [120, 0]
 	  DstBlock		  " SFunction "
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  170
-	  SrcBlock		  "lap"
+	  Name			  "Measurement"
+	  ZOrder		  7
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "Measurement"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "clk"
 	  SrcPort		  1
 	  DstBlock		  " SFunction "
 	  DstPort		  2
 	}
 	Line {
-	  Name			  "minutes"
-	  ZOrder		  171
-	  Labels		  [0, 0]
-	  SrcBlock		  " SFunction "
-	  SrcPort		  2
-	  DstBlock		  "minutes"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "seconds"
-	  ZOrder		  172
-	  Labels		  [0, 0]
-	  SrcBlock		  " SFunction "
-	  SrcPort		  3
-	  DstBlock		  "seconds"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  173
-	  SrcBlock		  "input events"
-	  SrcPort		  1
-	  DstBlock		  " SFunction "
-	  DstPort		  3
-	}
-	Line {
-	  ZOrder		  174
+	  ZOrder		  9
 	  SrcBlock		  " Demux "
 	  SrcPort		  1
 	  DstBlock		  " Terminator "
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  175
+	  ZOrder		  10
 	  SrcBlock		  " SFunction "
 	  SrcPort		  1
 	  DstBlock		  " Demux "
@@ -1528,144 +1548,226 @@ Model {
       }
     }
     Block {
-      BlockType		      Constant
-      Name		      "storeRecall active"
-      SID		      "30"
-      Position		      [145, 100, 175, 130]
-      ZOrder		      25
-      OutDataTypeStr	      "double"
+      BlockType		      SubSystem
+      Name		      "Frequency generator"
+      SID		      "6"
+      Ports		      [1, 1]
+      Position		      [245, 122, 445, 258]
+      ZOrder		      -6
+      BackgroundColor	      "orange"
+      NameLocation	      "top"
+      RequestExecContextInheritance off
+      System {
+	Name			"Frequency generator"
+	Location		[105, 58, 874, 1014]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Frequency"
+	  SID			  "7"
+	  Position		  [75, 407, 105, 423]
+	  ZOrder		  -1
+	  BackgroundColor	  "lightBlue"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "8"
+	  Position		  [395, 330, 425, 360]
+	  ZOrder		  -2
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  BackgroundColor	  "yellow"
+	  NameLocation		  "left"
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  SID			  "9"
+	  Position		  [260, 400, 300, 430]
+	  ZOrder		  -3
+	  BackgroundColor	  "lightBlue"
+	  NameLocation		  "top"
+	  ShowName		  off
+	  Gain			  "2*pi"
+	  ParamDataTypeStr	  "Inherit: Same as input"
+	  OutDataTypeStr	  "Inherit: Same as input"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "total \nangle"
+	  }
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  SID			  "10"
+	  Ports			  [2, 1]
+	  Position		  [430, 392, 460, 423]
+	  ZOrder		  -4
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  Operator		  "<="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Total\ncycles"
+	  SID			  "11"
+	  Ports			  [1, 1]
+	  Position		  [150, 400, 180, 430]
+	  ZOrder		  -5
+	  BackgroundColor	  "lightBlue"
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "Trigonometric\nFunction"
+	  SID			  "12"
+	  Ports			  [1, 1]
+	  Position		  [370, 400, 400, 430]
+	  ZOrder		  -6
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Signal"
+	  SID			  "13"
+	  Position		  [565, 403, 595, 417]
+	  ZOrder		  -7
+	  BackgroundColor	  "yellow"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Frequency"
+	  SrcPort		  1
+	  DstBlock		  "Total\ncycles"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Trigonometric\nFunction"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [0, 35]
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "Signal"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Total\ncycles"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "total \nangle"
+	  ZOrder		  6
+	  Labels		  [0, 0]
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "Trigonometric\nFunction"
+	  DstPort		  1
+	}
+      }
     }
     Block {
-      BlockType		      Constant
-      Name		      "storeRecall inacative"
-      SID		      "29"
-      Position		      [145, 45, 175, 75]
-      ZOrder		      24
-      Value		      "0"
-      OutDataTypeStr	      "double"
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "14"
+      Ports		      [2, 1]
+      Position		      [468, 360, 517, 370]
+      ZOrder		      -7
+      BlockRotation	      270
+      BlockMirror	      on
+      NameLocation	      "left"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
     }
     Line {
-      ZOrder		      28
-      SrcBlock		      "Pulse\nGenerator\n"
+      ZOrder		      1
+      SrcBlock		      "Frequency generator"
       SrcPort		      1
-      DstBlock		      "Mux"
-      DstPort		      3
+      DstBlock		      "Frequency counter"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      2
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "Frequency\n(move slider)"
+      DstPort		      1
     }
     Line {
       ZOrder		      3
-      SrcBlock		      "Constant 0"
+      SrcBlock		      "1 ms\nclock"
       SrcPort		      1
-      Points		      [26, 0; 0, 35]
-      DstBlock		      "Manual Switch"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      4
-      SrcBlock		      "Constant 1"
-      SrcPort		      1
-      DstBlock		      "Manual Switch"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      5
-      SrcBlock		      "Manual Switch"
-      SrcPort		      1
-      Points		      [16, 0; 0, -20]
-      DstBlock		      "StopWatch"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      6
-      SrcBlock		      "StopWatch"
-      SrcPort		      1
-      Points		      [17, 0; 0, -5]
-      DstBlock		      "Display Minutes"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      10
-      SrcBlock		      "StopWatch"
-      SrcPort		      2
-      Points		      [34, 0; 0, -5]
-      DstBlock		      "Display Seconds"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      15
-      SrcBlock		      "Lap = 1"
-      SrcPort		      1
-      DstBlock		      "Manual Switch1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      16
-      SrcBlock		      "Lap = 0"
-      SrcPort		      1
-      Points		      [29, 0; 0, -45]
-      DstBlock		      "Manual Switch1"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      18
-      SrcBlock		      "Manual Switch1"
-      SrcPort		      1
-      Points		      [33, 0; 0, -50]
-      DstBlock		      "StopWatch"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      29
-      SrcBlock		      "Mux"
-      SrcPort		      1
-      Points		      [120, 0]
-      DstBlock		      "StopWatch"
+      DstBlock		      "Frequency counter"
       DstPort		      trigger
     }
     Line {
-      ZOrder		      40
-      SrcBlock		      "storeRecall inacative"
+      ZOrder		      4
+      SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [26, 0; 0, 35]
-      DstBlock		      "Manual Switch2"
+      DstBlock		      "Freq"
       DstPort		      1
     }
     Line {
-      ZOrder		      41
-      SrcBlock		      "storeRecall active"
+      ZOrder		      5
+      SrcBlock		      "Frequency\n(move slider)"
       SrcPort		      1
-      DstBlock		      "Manual Switch2"
-      DstPort		      2
+      Points		      [0, 45]
+      Branch {
+	ZOrder			6
+	DstBlock		"Frequency generator"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			7
+	Points			[0, 155]
+	DstBlock		"Mux"
+	DstPort			1
+      }
     }
     Line {
-      ZOrder		      42
-      SrcBlock		      "Manual Switch2"
+      ZOrder		      8
+      SrcBlock		      "Frequency counter"
       SrcPort		      1
-      Points		      [30, 0; 0, 60]
+      Points		      [52, 0; 0, 155]
       DstBlock		      "Mux"
       DstPort		      2
-    }
-    Line {
-      ZOrder		      43
-      SrcBlock		      "Reset active"
-      SrcPort		      1
-      Points		      [26, 0; 0, 35]
-      DstBlock		      "Manual Switch3"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      44
-      SrcBlock		      "Reset inactive"
-      SrcPort		      1
-      DstBlock		      "Manual Switch3"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      45
-      SrcBlock		      "Manual Switch3"
-      SrcPort		      1
-      Points		      [48, 0; 0, 160]
-      DstBlock		      "Mux"
-      DstPort		      1
     }
   }
 }
@@ -1677,868 +1779,90 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "StopWatchStatechart"
+    name		    "frequencycount"
     sfVersion		    80000032
-    firstTarget		    45
+    firstTarget		    7
   }
   chart {
     id			    2
     machine		    1
-    name		    "StopWatch"
-    windowPosition	    [199.5 216.75 417 348.75]
-    viewLimits		    [475.538 2745.538 -83.149 1273.518]
-    zoomFactor		    2.222
-    screen		    [1 1 3200 1200 1.25]
-    treeNode		    [0 3 0 0]
+    name		    "Frequency counter"
+    windowPosition	    [20.25 -165.125 922.5 525]
+    viewLimits		    [0 871 0 349]
+    zoomFactor		    1.333
+    screen		    [1 1 1280 800 1.333333333333333]
     viewObj		    2
     visible		    1
-    subviewS {
-    }
-    ssIdHighWaterMark	    144
+    ssIdHighWaterMark	    3
     decomposition	    CLUSTER_CHART
-    chartFileNumber	    3
-    allowGlobalAccessToExportedFunctions 0
+    chartFileNumber	    1
     executeAtInitialization 1
-    saturateOnIntegerOverflow 1
-    userSpecifiedStateTransitionExecutionOrder 1
     disableImplicitCasting  1
-    actionLanguage	    2
-    firstData		    30
-    firstEvent		    38
-    firstTransition	    41
+    supportVariableSizing   0
+    firstData		    3
+    firstEvent		    5
   }
-  state {
+  data {
     id			    3
-    labelString		    "Stopped"
-    position		    [1094.1667 56.3417 889.3 315.225]
-    fontSize		    18
-    chart		    2
-    treeNode		    [2 13 0 5]
-    subviewer		    2
     ssIdNumber		    1
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
+    name		    "Signal"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      unit {
+	name			"inherit"
+      }
     }
-    firstTransition	    15
+    dataType		    "boolean"
+    linkNode		    [2 0 4]
   }
-  state {
+  data {
     id			    4
-    labelString		    "Clock"
-    position		    [1480.1667 740.9667 130 108]
-    fontSize		    18
-    chart		    2
-    treeNode		    [8 0 0 0]
-    subviewer		    2
-    ssIdNumber		    18
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-    }
-  }
-  state {
-    id			    5
-    labelString		    "Started"
-    position		    [746.4333 594.5667 1722.4167 367.4575]
-    fontSize		    18
-    chart		    2
-    treeNode		    [2 9 3 0]
-    subviewer		    2
-    ssIdNumber		    4
-    type		    OR_STATE
-    decomposition	    SET_STATE
-    eml {
-    }
-  }
-  state {
-    id			    6
-    labelString		    "lap"
-    position		    [789.3667 743.2167 137.5 108.75]
-    fontSize		    12
-    chart		    2
-    treeNode		    [7 0 0 0]
-    subviewer		    2
-    ssIdNumber		    61
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-    }
-  }
-  state {
-    id			    7
-    labelString		    "Lap"
-    position		    [772.3667 697.5712 405.6667 177.1667]
-    fontSize		    12
-    chart		    2
-    treeNode		    [5 6 9 8]
-    subviewer		    2
-    ssIdNumber		    77
-    type		    AND_STATE
-    decomposition	    CLUSTER_STATE
-    executionOrder	    3
-    eml {
-    }
-    firstTransition	    21
-  }
-  state {
-    id			    8
-    labelString		    "Clock"
-    position		    [1206.0571 700.1962 672.8167 171.9167]
-    fontSize		    12
-    chart		    2
-    treeNode		    [5 4 7 0]
-    subviewer		    2
-    ssIdNumber		    78
-    type		    AND_STATE
-    decomposition	    CLUSTER_STATE
-    executionOrder	    2
-    eml {
-    }
-    firstTransition	    23
-  }
-  state {
-    id			    9
-    labelString		    "store_recall"
-    position		    [1917.7359 622.757 524.4 325.9951]
-    fontSize		    12
-    chart		    2
-    treeNode		    [5 10 0 7]
-    subviewer		    2
-    ssIdNumber		    94
-    type		    AND_STATE
-    decomposition	    CLUSTER_STATE
-    executionOrder	    1
-    eml {
-    }
-    firstTransition	    27
-    firstJunction	    26
-  }
-  state {
-    id			    10
-    labelString		    "recall"
-    position		    [2118.6692 673.0188 90 60]
-    fontSize		    12
-    chart		    2
-    treeNode		    [9 0 0 11]
-    subviewer		    2
-    ssIdNumber		    95
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-    }
-  }
-  state {
-    id			    11
-    labelString		    "store"
-    position		    [2118.6692 810.0854 90 60]
-    fontSize		    12
-    chart		    2
-    treeNode		    [9 0 10 0]
-    subviewer		    2
-    ssIdNumber		    97
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-    }
-  }
-  state {
-    id			    12
-    labelString		    "Store"
-    position		    [1654.8167 238.3538 105.5377 90.5714]
-    fontSize		    12
-    chart		    2
-    treeNode		    [3 0 14 0]
-    subviewer		    2
-    ssIdNumber		    117
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-    }
-  }
-  state {
-    id			    13
-    labelString		    "Recall"
-    position		    [1653.0881 83.1702 108.9949 92.9714]
-    fontSize		    12
-    chart		    2
-    treeNode		    [3 0 0 14]
-    subviewer		    2
-    ssIdNumber		    115
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-    }
-  }
-  state {
-    id			    14
-    labelString		    "Reset"
-    position		    [1262.3905 181.8417 90 60]
-    fontSize		    12
-    chart		    2
-    treeNode		    [3 0 13 12]
-    subviewer		    2
-    ssIdNumber		    131
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-    }
-  }
-  transition {
-    id			    15
-    labelString		    ""
-    labelPosition	    [1702.888 65.644 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 0 1 0 1702.8877 59.9276 0 0]
-    }
-    dst {
-      id		      13
-      intersection	      [1 0 -1 0.4569 1702.8877 83.1702 0 0]
-    }
-    midPoint		    [1702.8877 65.6436]
-    chart		    2
-    dataLimits		    [1700.488 1705.288 59.928 83.17]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    116
-    linkNode		    [3 0 16]
-  }
-  transition {
-    id			    16
-    labelString		    "Restart"
-    labelPosition	    [1435.728 90.074 41.641 16]
-    fontSize		    12
-    src {
-      id		      13
-      intersection	      [4 -1 0 0.4868 1653.0881 130.8799 0 0]
-    }
-    dst {
-      id		      14
-      intersection	      [1 0 -1 0.4971 1307.1287 181.8417 0 0]
-    }
-    midPoint		    [1436.5313 108.7837]
-    chart		    2
-    dataLimits		    [1304.729 1653.088 108.039 181.842]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      mode		      MIRROR_SLIDE
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    2
-    ssIdNumber		    135
-    linkNode		    [3 15 17]
-  }
-  transition {
-    id			    17
-    labelString		    "storeRecall /\n{\n  minutes_intern = 0;\n  seconds_intern = 0;\n  seconds_stored = 0;\n  minutes"
-    "_stored = 0;\n}"
-    labelPosition	    [1526.023 165.208 117 100]
-    fontSize		    12
-    src {
-      id		      12
-      intersection	      [1 0 -1 0.1531 1670.973 238.3538 0 0]
-    }
-    dst {
-      id		      13
-      intersection	      [3 -0 1 0.8359 1670.973 176.1417 0 0]
-    }
-    midPoint		    [1670.973 211.2477]
-    chart		    2
-    dataLimits		    [1668.573 1673.373 176.142 238.354]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    129
-    linkNode		    [3 16 18]
-  }
-  transition {
-    id			    18
-    labelString		    "storeRecall /\n{\n  minutes_stored = minutes_intern;\n  seconds_stored = seconds_intern;\n}"
-    labelPosition	    [1774.704 181.889 191.672 72]
-    fontSize		    12
-    src {
-      id		      13
-      intersection	      [3 0 1 0.1524 1745.473 176.1417 0 0]
-    }
-    dst {
-      id		      12
-      intersection	      [1 -0 -1 0.859 1745.473 238.3538 0 0]
-    }
-    midPoint		    [1745.473 203.2477]
-    chart		    2
-    dataLimits		    [1743.073 1747.873 176.142 238.354]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    128
-    linkNode		    [3 17 19]
-  }
-  transition {
-    id			    19
-    labelString		    "{\n  minutes_intern = 0;\n  seconds_intern = 0;\n  seconds_stored = 0;\n  minutes_stored = 0;\n}"
-    labelPosition	    [1136.581 233.671 117 86]
-    fontSize		    12
-    src {
-      id		      14
-      intersection	      [4 -1 0 0.7872 1262.3905 194.6092 0 0]
-    }
-    dst {
-      id		      14
-      intersection	      [4 -1 0 0.1372 1262.3905 233.6092 0 0]
-    }
-    midPoint		    [1228.6287 208.32]
-    chart		    2
-    dataLimits		    [1227.941 1262.39 194.609 236.009]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      mode		      MIRROR_SLIDE
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    139
-    linkNode		    [3 18 20]
-  }
-  transition {
-    id			    20
-    labelString		    "Restart"
-    labelPosition	    [1487.23 311.213 41.641 16]
-    fontSize		    12
-    src {
-      id		      12
-      intersection	      [4 -1 0 0.5032 1654.8167 283.3538 0 0]
-    }
-    dst {
-      id		      14
-      intersection	      [3 0 1 0.4612 1310.8784 241.8417 0 0]
-    }
-    midPoint		    [1439.6516 309.7936]
-    chart		    2
-    dataLimits		    [1308.478 1654.817 241.842 309.946]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      mode		      MIRROR_SLIDE
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    2
-    ssIdNumber		    134
-    linkNode		    [3 19 0]
-  }
-  transition {
-    id			    21
-    labelString		    ""
-    labelPosition	    [861.474 728.217 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 -0 1 0 861.4738 713.2167 0 0]
-    }
-    dst {
-      id		      6
-      intersection	      [1 0 -1 0.5244 861.4738 743.2167 0 0]
-    }
-    midPoint		    [861.4738 728.2167]
-    chart		    2
-    dataLimits		    [859.074 863.874 713.217 743.217]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    76
-    linkNode		    [7 0 22]
-  }
-  transition {
-    id			    22
-    labelString		    "[lap] /\n{\n  seconds = seconds_intern;\n  minutes = minutes_intern;\n}"
-    labelPosition	    [982.188 766.575 151.672 72]
-    fontSize		    12
-    src {
-      id		      6
-      intersection	      [2 1 0 0.2041 926.8667 765.4081 0 0]
-    }
-    dst {
-      id		      6
-      intersection	      [2 1 0 0.6975 926.8667 819.0748 0 0]
-    }
-    midPoint		    [974.8667 792.2415]
-    chart		    2
-    dataLimits		    [926.867 974.987 765.408 821.475]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      mode		      MIRROR_SLIDE
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    79
-    linkNode		    [7 21 0]
-  }
-  transition {
-    id			    23
-    labelString		    ""
-    labelPosition	    [1555.136 725.967 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 -0 1 0 1555.1359 710.9667 0 0]
-    }
-    dst {
-      id		      4
-      intersection	      [1 0 -1 0.5767 1555.1359 740.9667 0 0]
-    }
-    midPoint		    [1555.1359 725.9667]
-    chart		    2
-    dataLimits		    [1552.736 1557.536 710.967 740.967]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    102
-    linkNode		    [8 0 24]
-  }
-  transition {
-    id			    24
-    labelString		    "clk [seconds_intern < 59] /\n{\n  seconds_intern = seconds_intern + 1;\n}"
-    labelPosition	    [1214.717 771.214 311.938 86]
-    fontSize		    12
-    src {
-      id		      4
-      intersection	      [4 -1 0 0.7546 1480.1667 767.4713 0 0]
-    }
-    dst {
-      id		      4
-      intersection	      [4 -1 0 0.1673 1480.1667 830.8998 0 0]
-    }
-    midPoint		    [1432.1667 799.1855]
-    chart		    2
-    dataLimits		    [1432.042 1480.167 767.471 833.3]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      mode		      MIRROR_SLIDE
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    57
-    linkNode		    [8 23 25]
-  }
-  transition {
-    id			    25
-    labelString		    "clk [seconds_intern == 59] /\n{\n  minutes_intern = minutes_intern + 1;\n  seconds_intern = 0;\n}"
-    labelPosition	    [1667.227 768.557 203.25 72]
-    fontSize		    12
-    src {
-      id		      4
-      intersection	      [2 1 0 0.2613 1610.1667 769.1855 0 0]
-    }
-    dst {
-      id		      4
-      intersection	      [2 1 0 0.7375 1610.1667 820.6141 0 0]
-    }
-    midPoint		    [1658.1667 794.8998]
-    chart		    2
-    dataLimits		    [1610.167 1658.286 769.186 823.014]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      mode		      MIRROR_SLIDE
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    2
-    ssIdNumber		    58
-    linkNode		    [8 24 0]
-  }
-  junction {
-    id			    26
-    position		    [2402.8121 637.201 7]
-    chart		    2
-    subviewer		    2
-    ssIdNumber		    143
-    type		    HISTORY_JUNCTION
-    linkNode		    [9 0 0]
-  }
-  transition {
-    id			    27
-    labelString		    ""
-    labelPosition	    [2161.541 658.019 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 -0 1 0 2161.5409 643.0188 0 0]
-    }
-    dst {
-      id		      10
-      intersection	      [1 0 -1 0.4764 2161.5409 673.0188 0 0]
-    }
-    midPoint		    [2161.5409 658.0188]
-    chart		    2
-    dataLimits		    [2159.141 2163.941 643.019 673.019]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    144
-    linkNode		    [9 0 28]
-  }
-  transition {
-    id			    28
-    labelString		    "storeRecall /\n{\n  seconds_intern = seconds_stored;\n  minutes_intern = minutes_stored;\n}"
-    labelPosition	    [1941.679 737.657 191.672 72]
-    fontSize		    12
-    src {
-      id		      11
-      intersection	      [1 0 -1 0.2481 2141.0025 810.0854 0 0]
-    }
-    dst {
-      id		      10
-      intersection	      [3 -0 1 0.7519 2141.0025 733.0188 0 0]
-    }
-    midPoint		    [2141.0025 775.5521]
-    chart		    2
-    dataLimits		    [2138.602 2143.403 733.019 810.085]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    101
-    linkNode		    [9 27 29]
-  }
-  transition {
-    id			    29
-    labelString		    "storeRecall / \n{\n  seconds_stored = seconds_intern;\n  minutes_stored = minutes_intern;\n}"
-    labelPosition	    [2217.903 737.437 191.672 72]
-    fontSize		    12
-    src {
-      id		      10
-      intersection	      [3 0 1 0.1815 2192.3359 733.0188 0 0]
-    }
-    dst {
-      id		      11
-      intersection	      [1 -0 -1 0.8185 2192.3359 810.0854 0 0]
-    }
-    midPoint		    [2192.3359 767.5521]
-    chart		    2
-    dataLimits		    [2189.936 2194.736 733.019 810.085]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    100
-    linkNode		    [9 28 0]
-  }
-  data {
-    id			    30
-    ssIdNumber		    23
-    name		    "minutes"
+    ssIdNumber		    2
+    name		    "Measurement"
     scope		    OUTPUT_DATA
     machine		    1
     props {
-      array {
-	size			"-1"
-      }
       type {
-	primitive		SF_UINT32_TYPE
-	isSigned		1
-	wordLength		"16"
+	primitive		SF_DOUBLE_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
       }
       frame		      SF_FRAME_NO
       unit {
 	name			"inherit"
       }
     }
-    dataType		    "uint32"
-    linkNode		    [2 0 31]
-  }
-  data {
-    id			    31
-    ssIdNumber		    24
-    name		    "seconds"
-    scope		    OUTPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	primitive		SF_UINT8_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_NO
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "uint8"
-    linkNode		    [2 30 32]
-  }
-  data {
-    id			    32
-    ssIdNumber		    28
-    name		    "run"
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	primitive		SF_BOOLEAN_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_INHERITED
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "boolean"
-    linkNode		    [2 31 33]
-  }
-  data {
-    id			    33
-    ssIdNumber		    42
-    name		    "lap"
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	primitive		SF_BOOLEAN_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_INHERITED
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "boolean"
-    linkNode		    [2 32 34]
-  }
-  data {
-    id			    34
-    ssIdNumber		    31
-    name		    "minutes_intern"
-    scope		    LOCAL_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	primitive		SF_UINT32_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_NO
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "uint32"
-    linkNode		    [2 33 35]
-  }
-  data {
-    id			    35
-    ssIdNumber		    30
-    name		    "seconds_intern"
-    scope		    LOCAL_DATA
-    machine		    1
-    props {
-      type {
-	primitive		SF_UINT8_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_NO
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "uint8"
-    linkNode		    [2 34 36]
-  }
-  data {
-    id			    36
-    ssIdNumber		    91
-    name		    "seconds_stored"
-    scope		    LOCAL_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	primitive		SF_UINT8_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_INHERITED
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "uint8"
-    linkNode		    [2 35 37]
-  }
-  data {
-    id			    37
-    ssIdNumber		    92
-    name		    "minutes_stored"
-    scope		    LOCAL_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	primitive		SF_UINT32_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_INHERITED
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "uint32"
-    linkNode		    [2 36 0]
+    dataType		    "double"
+    linkNode		    [2 3 0]
   }
   event {
-    id			    38
-    ssIdNumber		    25
+    id			    5
+    ssIdNumber		    3
     name		    "clk"
     scope		    INPUT_EVENT
     trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 0 39]
-  }
-  event {
-    id			    39
-    ssIdNumber		    104
-    name		    "storeRecall"
-    scope		    INPUT_EVENT
-    trigger		    RISING_EDGE_EVENT
-    machine		    1
-    linkNode		    [2 38 40]
-  }
-  event {
-    id			    40
-    ssIdNumber		    136
-    name		    "Restart"
-    scope		    INPUT_EVENT
-    trigger		    RISING_EDGE_EVENT
-    machine		    1
-    linkNode		    [2 39 0]
-  }
-  transition {
-    id			    41
-    labelString		    ""
-    labelPosition	    [1534.904 31.007 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 0 1 0 1534.9037 20.6064 0 0]
-    }
-    dst {
-      id		      3
-      intersection	      [1 0 -1 0.4956 1534.9037 56.3417 0 0]
-    }
-    midPoint		    [1534.9037 31.0071]
-    chart		    2
-    dataLimits		    [1532.504 1537.304 20.606 56.342]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    2
-    linkNode		    [2 0 42]
-  }
-  transition {
-    id			    42
-    labelString		    "[run] /\n{\n  seconds_intern = 0;\n  minutes_intern = 0;\n}"
-    labelPosition	    [1294.167 430.077 169.469 107]
-    fontSize		    18
-    src {
-      id		      3
-      intersection	      [3 0 1 0.8167 1257.1667 371.5667 0 0]
-    }
-    dst {
-      id		      5
-      intersection	      [1 -0 -1 0.2965 1257.1667 594.5667 0 0]
-    }
-    midPoint		    [1257.1667 479.0667]
-    chart		    2
-    dataLimits		    [1254.767 1259.567 371.567 594.567]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    9
-    linkNode		    [2 41 43]
-  }
-  transition {
-    id			    43
-    labelString		    "[~run]"
-    labelPosition	    [1565.8 431.509 48.484 23]
-    fontSize		    18
-    src {
-      id		      5
-      intersection	      [1 0 -1 0.46 1538.8167 594.5667 0 0]
-    }
-    dst {
-      id		      3
-      intersection	      [3 -0 1 0.5 1538.8167 371.5667 0 0]
-    }
-    midPoint		    [1538.8167 487.0667]
-    chart		    2
-    dataLimits		    [1536.417 1541.217 371.567 594.567]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      mode		      MIRROR_SLIDE
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    17
-    linkNode		    [2 42 0]
+    linkNode		    [2 0 0]
   }
   instance {
-    id			    44
+    id			    6
     machine		    1
-    name		    "StopWatch"
+    name		    "Frequency counter"
     chart		    2
   }
   target {
-    id			    45
+    id			    7
     machine		    1
     name		    "sfun"
-    description		    "Default Simulink S-Function Target."
+    codeFlags		    ""
     linkNode		    [1 0 0]
   }
 }
