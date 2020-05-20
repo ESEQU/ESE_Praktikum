@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.36"
+    ComputedModelVersion    "1.37"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -79,23 +79,23 @@ Model {
 	  $ObjectID		  5
 	  IsActive		  [1]
 	  IsTabbed		  [1]
+	  ViewObjType		  "StateflowChart"
+	  LoadSaveID		  "5"
+	  Extents		  [1882.0, 814.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [404.24523809523816, 25.833685036182686]
+	  SceneRectInView	  [404.24523809523816, 25.833685036182686, 1075.4285714285713, 465.14285714285717]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1882.0, 814.0]
 	  ZoomFactor		  [1.6703096539162114]
 	  Offset		  [-141.35371112840727, 6.61832061068705]
 	  SceneRectInView	  [-141.35371112840727, 6.61832061068705, 1126.7371864776444, 487.33478735005446]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "StateflowChart"
-	  LoadSaveID		  "5"
-	  Extents		  [1882.0, 814.0]
-	  ZoomFactor		  [2.0]
-	  Offset		  [515.69285714285729, 129.36225646475418]
-	  SceneRectInView	  [515.69285714285729, 129.36225646475418, 941.0, 407.0]
 	}
 	Object {
 	  $ObjectID		  7
@@ -146,9 +146,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lukas Bilal"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 20 18:37:54 2020"
-  RTWModifiedTimeStamp	  511900665
-  ModelVersionFormat	  "1.%<AutoIncrement:36>"
+  LastModifiedDate	  "Wed May 20 18:45:38 2020"
+  RTWModifiedTimeStamp	  511901092
+  ModelVersionFormat	  "1.%<AutoIncrement:37>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1263,7 +1263,7 @@ Model {
   System {
     Name		    "frequencycount"
     Location		    [-8, -8, 1928, 1048]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1319,22 +1319,22 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','StructureWithTime',"
       "'DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'S"
-      "erializedDisplays',{struct('MinYLimReal','-0.1375','MaxYLimReal','1.2375','YLabelReal','','MinYLimMag','0.00000'"
-      ",'MaxYLimMag','1.2375','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 "
-      "0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;"
-      "0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 "
-      "0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392"
-      "156863],'Title','Magenta: actual RPM; Yellow: measured RPM','LinePropertiesCache',{{}},'UserDefinedChannelNames'"
-      ",{{}},'NumLines',2,'LineNames',{{'Frequency (move slider)','Frequency counter'}},'ShowContent',true,'Placement',"
-      "1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.1375','MaxYLimReal','1.2375','YLabelReal','','MinYLimMag'"
-      ",'0.00000','MaxYLimMag','1.2375','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
-      "lor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666"
-      "666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372"
-      "549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0"
-      ".650980392156863],'Title','Magenta: actual RPM; Yellow: measured RPM','LinePropertiesCache',{{}},'UserDefinedCha"
-      "nnelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools',"
-      "'Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2020a')),"
-      "'Version','2020a','Location',[1 76 1921 1039])"
+      "erializedDisplays',{struct('MinYLimReal','-25.075','MaxYLimReal','225.675','YLabelReal','','MinYLimMag','0.00000"
+      "','MaxYLimMag','225.675','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 "
+      "0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666666666"
+      "7;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254901960"
+      "8 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6509803"
+      "92156863],'Title','Magenta: actual RPM; Yellow: measured RPM','LinePropertiesCache',{{}},'UserDefinedChannelName"
+      "s',{{}},'NumLines',2,'LineNames',{{'Frequency (move slider)','Frequency counter'}},'ShowContent',true,'Placement"
+      "',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-25.075','MaxYLimReal','225.675','YLabelReal','','MinYLimM"
+      "ag','0.00000','MaxYLimMag','225.675','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Ax"
+      "esColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066"
+      "6666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83"
+      "1372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392156"
+      "86 0.650980392156863],'Title','Magenta: actual RPM; Yellow: measured RPM','LinePropertiesCache',{{}},'UserDefine"
+      "dChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Too"
+      "ls','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2020a"
+      "')),'Version','2020a','Location',[1 76 1921 1039])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -1358,7 +1358,7 @@ Model {
       RTWMemSecDataInternal   "Inherit from model"
       RTWMemSecDataParameters "Inherit from model"
       ContentPreviewEnabled   off
-      gain		      "1.1"
+      gain		      "200.600"
       low		      "1"
       high		      "500"
     }
@@ -1380,7 +1380,7 @@ Model {
       System {
 	Name			"Frequency counter"
 	Location		[-8, -8, 1928, 1048]
-	Open			off
+	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1736,11 +1736,12 @@ Stateflow {
     machine		    1
     name		    "Frequency counter"
     windowPosition	    [-8 -8 1936 1056]
-    viewLimits		    [515.693 1456.693 129.362 536.362]
-    zoomFactor		    0.667
+    viewLimits		    [404.245 1479.674 25.834 490.977]
+    zoomFactor		    0.762
     screen		    [1 1 1280 800 1.333333333333333]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
     subviewS {
     }
     ssIdHighWaterMark	    51
@@ -1869,8 +1870,8 @@ Stateflow {
   }
   transition {
     id			    10
-    labelString		    "[time == 1000]\n{\n  Measurement = counter;\n}"
-    labelPosition	    [1020.336 278.112 138.953 58]
+    labelString		    "[time == 1000]\n{\n  Measurement = counter;\n  time = 0;\n  counter = 0;\n}"
+    labelPosition	    [1020.336 278.112 138.953 86]
     fontSize		    12
     src {
       id		      7
