@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.30"
+    ComputedModelVersion    "1.31"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -73,23 +73,23 @@ Model {
 	  $ObjectID		  5
 	  IsActive		  [1]
 	  IsTabbed		  [1]
-	  ViewObjType		  "StateflowChart"
-	  LoadSaveID		  "1"
-	  Extents		  [1362.0, 814.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [1087.0486781794802, -114.71455572757236]
-	  SceneRectInView	  [1087.0486781794802, -114.71455572757236, 2270.0, 1356.6666666666667]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1689.0, 814.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [73.8988089924768, 159.3940494719007]
+	  SceneRectInView	  [73.8988089924768, 159.3940494719007, 1126.0, 542.66666666666663]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1689.0, 814.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [46.565475659143431, 85.794049471900621]
-	  SceneRectInView	  [46.565475659143431, 85.794049471900621, 1351.2, 651.2]
+	  ViewObjType		  "StateflowChart"
+	  LoadSaveID		  "1"
+	  Extents		  [1362.0, 814.0]
+	  ZoomFactor		  [1.2737304778827268]
+	  Offset		  [742.3879224669621, 248.88951571218792]
+	  SceneRectInView	  [742.3879224669621, 248.88951571218792, 1069.3000000000002, 639.06769456681366]
 	}
 	PropName		"EditorsInfo"
       }
@@ -98,6 +98,19 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  7
+	  Type			  "GLUE2:DDG Component"
+	  ID			  "SymbolManager"
+	  Visible		  [0]
+	  CreateCallback	  "Stateflow.Interface.Panel.createSymbolManagerComponent"
+	  UserData		  "0"
+	  Floating		  [0]
+	  DockPosition		  "Right"
+	  Width			  [319]
+	  Height		  [847]
+	  Minimized		  "Unset"
+	}
+	Object {
+	  $ObjectID		  8
 	  Type			  "GLUE2:PropertyInspector"
 	  ID			  "Property Inspector"
 	  Visible		  [0]
@@ -109,27 +122,14 @@ Model {
 	  Height		  [480]
 	  Minimized		  "Off"
 	}
-	Object {
-	  $ObjectID		  8
-	  Type			  "GLUE2:DDG Component"
-	  ID			  "SymbolManager"
-	  Visible		  [1]
-	  CreateCallback	  "Stateflow.Interface.Panel.createSymbolManagerComponent"
-	  UserData		  "0"
-	  Floating		  [0]
-	  DockPosition		  "Right"
-	  Width			  [319]
-	  Height		  [847]
-	  Minimized		  "Unset"
-	}
 	PropName		"DockComponentsInfo"
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADa/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAeQAAA2sAAABjAP///wAAAAEAAAFDAAADa/wCA"
-      "AAAAvsAAABCAEcATABVAEUAMgA6AEQARABHACAAQwBvAG0AcABvAG4AZQBuAHQALwBTAHkAbQBiAG8AbABNAGEAbgBhAGcAZQByAQAAAHkAAANrA"
+      "AAAAvsAAABCAEcATABVAEUAMgA6AEQARABHACAAQwBvAG0AcABvAG4AZQBuAHQALwBTAHkAbQBiAG8AbABNAGEAbgBhAGcAZQByAAAAAHkAAANrA"
       "AAAIAD////7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4Ac"
-      "wBwAGUAYwB0AG8AcgAAAAI4AAABrAAAAawA////AAAFeAAAA2sAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAwAAAAA="
+      "wBwAGUAYwB0AG8AcgAAAAI4AAABrAAAAawA////AAAGvwAAA2sAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAwAAAAA="
       Array {
 	Type			"Cell"
 	Dimension		0
@@ -146,9 +146,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lukas Bilal"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 20 23:11:02 2020"
-  RTWModifiedTimeStamp	  511917057
-  ModelVersionFormat	  "1.%<AutoIncrement:30>"
+  LastModifiedDate	  "Wed May 27 13:57:27 2020"
+  RTWModifiedTimeStamp	  512488142
+  ModelVersionFormat	  "1.%<AutoIncrement:31>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1214,7 +1214,7 @@ Model {
   System {
     Name		    "StopWatchStatechart_extended"
     Location		    [-8, -8, 1928, 1048]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1228,7 +1228,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "37"
     SimulinkSubDomain	    "Simulink"
@@ -1342,7 +1342,7 @@ Model {
       System {
 	Name			"StopWatch"
 	Location		[-8, -8, 1928, 1048]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1693,15 +1693,15 @@ Stateflow {
     machine		    1
     name		    "StopWatch"
     windowPosition	    [199.5 216.75 417 348.75]
-    viewLimits		    [1087.049 3357.049 -114.715 1241.952]
-    zoomFactor		    2.222
+    viewLimits		    [742.388 1811.688 248.89 887.957]
+    zoomFactor		    1.047
     screen		    [1 1 3200 1200 1.25]
     treeNode		    [0 3 0 0]
     viewObj		    2
     visible		    1
     subviewS {
     }
-    ssIdHighWaterMark	    148
+    ssIdHighWaterMark	    149
     decomposition	    CLUSTER_CHART
     chartFileNumber	    3
     allowGlobalAccessToExportedFunctions 0
@@ -1710,9 +1710,9 @@ Stateflow {
     userSpecifiedStateTransitionExecutionOrder 1
     disableImplicitCasting  1
     actionLanguage	    2
-    firstData		    26
-    firstEvent		    36
-    firstTransition	    37
+    firstData		    27
+    firstEvent		    37
+    firstTransition	    38
   }
   state {
     id			    3
@@ -1785,7 +1785,7 @@ Stateflow {
     executionOrder	    3
     eml {
     }
-    firstTransition	    19
+    firstTransition	    20
   }
   state {
     id			    8
@@ -1801,7 +1801,7 @@ Stateflow {
     executionOrder	    2
     eml {
     }
-    firstTransition	    21
+    firstTransition	    22
   }
   state {
     id			    9
@@ -1817,7 +1817,7 @@ Stateflow {
     executionOrder	    1
     eml {
     }
-    firstTransition	    23
+    firstTransition	    24
   }
   state {
     id			    10
@@ -1864,7 +1864,7 @@ Stateflow {
   state {
     id			    13
     labelString		    "Recall"
-    position		    [1579.7406 101.0417 108.9949 92.9714]
+    position		    [1579.7406 121.7084 108.9949 92.9714]
     fontSize		    12
     chart		    2
     treeNode		    [3 0 0 11]
@@ -1877,20 +1877,45 @@ Stateflow {
   }
   transition {
     id			    14
+    labelString		    ""
+    labelPosition	    [1629.54 104.182 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 1629.5402 98.4658 0 0]
+    }
+    dst {
+      id		      13
+      intersection	      [1 0 -1 0.4569 1629.5402 121.7084 0 0]
+    }
+    midPoint		    [1629.5402 104.1818]
+    chart		    2
+    dataLimits		    [1627.14 1631.94 98.466 121.708]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      mode		      MIRROR_SLIDE
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    116
+    linkNode		    [3 0 15]
+  }
+  transition {
+    id			    15
     labelString		    "[reset]"
-    labelPosition	    [1362.381 107.945 35.313 16]
+    labelPosition	    [1339.575 120.137 35.313 16]
     fontSize		    12
     src {
       id		      13
-      intersection	      [4 -1 0 0.4868 1579.7406 148.7514 0 0]
+      intersection	      [4 -1 0 0.4868 1579.7406 169.4181 0 0]
     }
     dst {
       id		      11
-      intersection	      [1 0 -1 0.4971 1233.7812 199.7132 0 0]
+      intersection	      [1 0 -1 0.6634 1248.7478 199.7132 0 0]
     }
-    midPoint		    [1363.1838 126.6552]
+    midPoint		    [1372.7763 139.0978]
     chart		    2
-    dataLimits		    [1231.381 1579.741 125.911 199.713]
+    dataLimits		    [1246.348 1579.741 136.047 199.713]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -1899,61 +1924,10 @@ Stateflow {
     }
     executionOrder	    2
     ssIdNumber		    135
-    linkNode		    [3 0 15]
-  }
-  transition {
-    id			    15
-    labelString		    "[store_recall] /\n{\n  minutes_intern = 0;\n  seconds_intern = 0;\n  seconds_stored = 0;\n  minu"
-    "tes_stored = 0;\n}"
-    labelPosition	    [1452.676 183.079 117 100]
-    fontSize		    12
-    src {
-      id		      12
-      intersection	      [1 0 -1 0.1531 1597.6255 256.2253 0 0]
-    }
-    dst {
-      id		      13
-      intersection	      [3 -0 1 0.8359 1597.6255 194.0132 0 0]
-    }
-    midPoint		    [1597.6255 229.1192]
-    chart		    2
-    dataLimits		    [1595.226 1600.026 194.013 256.225]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    129
     linkNode		    [3 14 16]
   }
   transition {
     id			    16
-    labelString		    "[store_recall] /\n{\n  minutes_stored = minutes_intern;\n  seconds_stored = seconds_intern;\n}"
-    labelPosition	    [1701.357 199.761 191.672 72]
-    fontSize		    12
-    src {
-      id		      13
-      intersection	      [3 0 1 0.1524 1672.1255 194.0132 0 0]
-    }
-    dst {
-      id		      12
-      intersection	      [1 -0 -1 0.859 1672.1255 256.2253 0 0]
-    }
-    midPoint		    [1672.1255 221.1192]
-    chart		    2
-    dataLimits		    [1669.726 1674.526 194.013 256.225]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    128
-    linkNode		    [3 15 17]
-  }
-  transition {
-    id			    17
     labelString		    "{\n  seconds_stored = 0;\n  minutes_stored = 0;\n}"
     labelPosition	    [1063.234 251.542 117 58]
     fontSize		    12
@@ -1976,10 +1950,61 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    139
+    linkNode		    [3 15 17]
+  }
+  transition {
+    id			    17
+    labelString		    "[store_recall] /\n{\n  minutes_intern = 0;\n  seconds_intern = 0;\n  seconds_stored = 0;\n  minu"
+    "tes_stored = 0;\n}"
+    labelPosition	    [1452.676 193.752 117 100]
+    fontSize		    12
+    src {
+      id		      12
+      intersection	      [1 0 -1 0.1531 1597.6255 256.2253 0 0]
+    }
+    dst {
+      id		      13
+      intersection	      [3 -0 1 0.8359 1597.6255 214.6798 0 0]
+    }
+    midPoint		    [1597.6255 239.4525]
+    chart		    2
+    dataLimits		    [1595.225 1600.025 214.68 256.225]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    129
     linkNode		    [3 16 18]
   }
   transition {
     id			    18
+    labelString		    "[store_recall] /\n{\n  minutes_stored = minutes_intern;\n  seconds_stored = seconds_intern;\n}"
+    labelPosition	    [1701.357 203.458 191.672 72]
+    fontSize		    12
+    src {
+      id		      13
+      intersection	      [3 0 1 0.1524 1672.1255 214.6798 0 0]
+    }
+    dst {
+      id		      12
+      intersection	      [1 -0 -1 0.859 1672.1255 256.2253 0 0]
+    }
+    midPoint		    [1672.1255 231.4525]
+    chart		    2
+    dataLimits		    [1669.725 1674.525 214.68 256.225]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    128
+    linkNode		    [3 17 19]
+  }
+  transition {
+    id			    19
     labelString		    "[reset]"
     labelPosition	    [1409.083 329.884 35.313 16]
     fontSize		    12
@@ -2002,10 +2027,10 @@ Stateflow {
     }
     executionOrder	    2
     ssIdNumber		    134
-    linkNode		    [3 17 0]
+    linkNode		    [3 18 0]
   }
   transition {
-    id			    19
+    id			    20
     labelString		    ""
     labelPosition	    [856.474 680.883 0 0]
     fontSize		    12
@@ -2026,10 +2051,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    76
-    linkNode		    [7 0 20]
+    linkNode		    [7 0 21]
   }
   transition {
-    id			    20
+    id			    21
     labelString		    "[lap] /\n{\n  seconds = seconds_intern;\n  minutes = minutes_intern;\n}"
     labelPosition	    [977.188 719.242 151.672 72]
     fontSize		    12
@@ -2052,10 +2077,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    79
-    linkNode		    [7 19 0]
+    linkNode		    [7 20 0]
   }
   transition {
-    id			    21
+    id			    22
     labelString		    ""
     labelPosition	    [1373.378 672.327 0 0]
     fontSize		    12
@@ -2076,10 +2101,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    102
-    linkNode		    [8 0 22]
+    linkNode		    [8 0 23]
   }
   transition {
-    id			    22
+    id			    23
     labelString		    "clk [seconds_intern == 59]\n{\n  minutes_intern = minutes_intern + 1;\n  seconds_intern = 0;\n}"
     labelPosition	    [1539.784 716.29 203.25 72]
     fontSize		    12
@@ -2102,10 +2127,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    58
-    linkNode		    [8 21 0]
+    linkNode		    [8 22 0]
   }
   transition {
-    id			    23
+    id			    24
     labelString		    ""
     labelPosition	    [2019.241 680.933 0 0]
     fontSize		    12
@@ -2126,10 +2151,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    144
-    linkNode		    [9 0 24]
+    linkNode		    [9 0 25]
   }
   transition {
-    id			    24
+    id			    25
     labelString		    "[store_recall && hasChanged(store_recall)] \n{\n  seconds_intern = seconds_stored;\n  minutes_in"
     "tern = minutes_stored;\n}"
     labelPosition	    [2063.069 759.001 234.578 72]
@@ -2153,10 +2178,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    146
-    linkNode		    [9 23 25]
+    linkNode		    [9 24 26]
   }
   transition {
-    id			    25
+    id			    26
     labelString		    "[~store_recall && hasChanged(store_recall)] /\n{\n  seconds_stored = seconds_intern;\n  minutes_"
     "stored = minutes_intern;\n}"
     labelPosition	    [1786.103 758.697 245.906 72]
@@ -2180,10 +2205,10 @@ Stateflow {
     }
     executionOrder	    2
     ssIdNumber		    147
-    linkNode		    [9 24 0]
+    linkNode		    [9 25 0]
   }
   data {
-    id			    26
+    id			    27
     ssIdNumber		    23
     name		    "minutes"
     scope		    OUTPUT_DATA
@@ -2204,10 +2229,10 @@ Stateflow {
       }
     }
     dataType		    "uint32"
-    linkNode		    [2 0 27]
+    linkNode		    [2 0 28]
   }
   data {
-    id			    27
+    id			    28
     ssIdNumber		    24
     name		    "seconds"
     scope		    OUTPUT_DATA
@@ -2228,35 +2253,12 @@ Stateflow {
       }
     }
     dataType		    "uint8"
-    linkNode		    [2 26 28]
-  }
-  data {
-    id			    28
-    ssIdNumber		    28
-    name		    "run"
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	primitive		SF_BOOLEAN_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      frame		      SF_FRAME_INHERITED
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "boolean"
     linkNode		    [2 27 29]
   }
   data {
     id			    29
-    ssIdNumber		    42
-    name		    "lap"
+    ssIdNumber		    28
+    name		    "run"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -2278,6 +2280,29 @@ Stateflow {
   }
   data {
     id			    30
+    ssIdNumber		    42
+    name		    "lap"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "boolean"
+    linkNode		    [2 29 31]
+  }
+  data {
+    id			    31
     ssIdNumber		    31
     name		    "minutes_intern"
     scope		    LOCAL_DATA
@@ -2298,10 +2323,10 @@ Stateflow {
       }
     }
     dataType		    "uint32"
-    linkNode		    [2 29 31]
+    linkNode		    [2 30 32]
   }
   data {
-    id			    31
+    id			    32
     ssIdNumber		    30
     name		    "seconds_intern"
     scope		    LOCAL_DATA
@@ -2319,10 +2344,10 @@ Stateflow {
       }
     }
     dataType		    "uint8"
-    linkNode		    [2 30 32]
+    linkNode		    [2 31 33]
   }
   data {
-    id			    32
+    id			    33
     ssIdNumber		    91
     name		    "seconds_stored"
     scope		    LOCAL_DATA
@@ -2343,10 +2368,10 @@ Stateflow {
       }
     }
     dataType		    "uint8"
-    linkNode		    [2 31 33]
+    linkNode		    [2 32 34]
   }
   data {
-    id			    33
+    id			    34
     ssIdNumber		    92
     name		    "minutes_stored"
     scope		    LOCAL_DATA
@@ -2367,10 +2392,10 @@ Stateflow {
       }
     }
     dataType		    "uint32"
-    linkNode		    [2 32 34]
+    linkNode		    [2 33 35]
   }
   data {
-    id			    34
+    id			    35
     ssIdNumber		    145
     name		    "store_recall"
     scope		    INPUT_DATA
@@ -2390,10 +2415,10 @@ Stateflow {
       }
     }
     dataType		    "boolean"
-    linkNode		    [2 33 35]
+    linkNode		    [2 34 36]
   }
   data {
-    id			    35
+    id			    36
     ssIdNumber		    148
     name		    "reset"
     scope		    INPUT_DATA
@@ -2413,10 +2438,10 @@ Stateflow {
       }
     }
     dataType		    "boolean"
-    linkNode		    [2 34 0]
+    linkNode		    [2 35 0]
   }
   event {
-    id			    36
+    id			    37
     ssIdNumber		    25
     name		    "clk"
     scope		    INPUT_EVENT
@@ -2425,7 +2450,7 @@ Stateflow {
     linkNode		    [2 0 0]
   }
   transition {
-    id			    37
+    id			    38
     labelString		    ""
     labelPosition	    [1502.87 58.707 0 0]
     fontSize		    12
@@ -2446,31 +2471,7 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
-    linkNode		    [2 0 38]
-  }
-  transition {
-    id			    38
-    labelString		    ""
-    labelPosition	    [1629.54 83.515 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 0 1 0 1629.5402 77.7991 0 0]
-    }
-    dst {
-      id		      13
-      intersection	      [1 0 -1 0.4569 1629.5402 101.0417 0 0]
-    }
-    midPoint		    [1629.5402 83.5151]
-    chart		    2
-    dataLimits		    [1627.14 1631.94 77.799 101.042]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    2
-    ssIdNumber		    116
-    linkNode		    [2 37 39]
+    linkNode		    [2 0 39]
   }
   transition {
     id			    39

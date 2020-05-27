@@ -98,19 +98,6 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  7
-	  Type			  "GLUE2:PropertyInspector"
-	  ID			  "Property Inspector"
-	  Visible		  [0]
-	  CreateCallback	  ""
-	  UserData		  ""
-	  Floating		  [0]
-	  DockPosition		  "Right"
-	  Width			  [640]
-	  Height		  [480]
-	  Minimized		  "Off"
-	}
-	Object {
-	  $ObjectID		  8
 	  Type			  "GLUE2:DDG Component"
 	  ID			  "SymbolManager"
 	  Visible		  [1]
@@ -121,6 +108,19 @@ Model {
 	  Width			  [319]
 	  Height		  [847]
 	  Minimized		  "Unset"
+	}
+	Object {
+	  $ObjectID		  8
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "Off"
 	}
 	PropName		"DockComponentsInfo"
       }
@@ -146,7 +146,7 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lukas Bilal"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 20 13:57:34 2020"
+  LastModifiedDate	  "Wed May 27 13:57:09 2020"
   RTWModifiedTimeStamp	  511883799
   ModelVersionFormat	  "1.%<AutoIncrement:23>"
   SampleTimeColors	  off
@@ -1698,8 +1698,6 @@ Stateflow {
     treeNode		    [0 3 0 0]
     viewObj		    2
     visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    148
     decomposition	    CLUSTER_CHART
     chartFileNumber	    3
@@ -1724,8 +1722,6 @@ Stateflow {
     ssIdNumber		    1
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
     firstTransition	    14
   }
   state {
@@ -1739,8 +1735,6 @@ Stateflow {
     ssIdNumber		    18
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    5
@@ -1753,8 +1747,6 @@ Stateflow {
     ssIdNumber		    4
     type		    OR_STATE
     decomposition	    SET_STATE
-    eml {
-    }
   }
   state {
     id			    6
@@ -1767,8 +1759,6 @@ Stateflow {
     ssIdNumber		    61
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    7
@@ -1782,8 +1772,6 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    3
-    eml {
-    }
     firstTransition	    20
   }
   state {
@@ -1798,8 +1786,6 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    2
-    eml {
-    }
     firstTransition	    22
   }
   state {
@@ -1814,8 +1800,6 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    1
-    eml {
-    }
     firstTransition	    25
   }
   state {
@@ -1829,8 +1813,6 @@ Stateflow {
     ssIdNumber		    95
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    11
@@ -1843,8 +1825,6 @@ Stateflow {
     ssIdNumber		    131
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    12
@@ -1857,8 +1837,6 @@ Stateflow {
     ssIdNumber		    117
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    13
@@ -1871,8 +1849,6 @@ Stateflow {
     ssIdNumber		    115
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   transition {
     id			    14
