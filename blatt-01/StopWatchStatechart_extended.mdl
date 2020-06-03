@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.31"
+    ComputedModelVersion    "1.32"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -86,10 +86,10 @@ Model {
 	  IsTabbed		  [0]
 	  ViewObjType		  "StateflowChart"
 	  LoadSaveID		  "1"
-	  Extents		  [1362.0, 814.0]
-	  ZoomFactor		  [1.2737304778827268]
-	  Offset		  [742.3879224669621, 248.88951571218792]
-	  SceneRectInView	  [742.3879224669621, 248.88951571218792, 1069.3000000000002, 639.06769456681366]
+	  Extents		  [1527.0, 814.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [738.246533752885, 327.51996463184355]
+	  SceneRectInView	  [738.246533752885, 327.51996463184355, 1221.6, 651.2]
 	}
 	PropName		"EditorsInfo"
       }
@@ -105,7 +105,7 @@ Model {
 	  UserData		  "0"
 	  Floating		  [0]
 	  DockPosition		  "Right"
-	  Width			  [319]
+	  Width			  [154]
 	  Height		  [847]
 	  Minimized		  "Unset"
 	}
@@ -126,7 +126,7 @@ Model {
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADa/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAeQAAA2sAAABjAP///wAAAAEAAAFDAAADa/wCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAeQAAA2sAAABjAP///wAAAAEAAACeAAADa/wCA"
       "AAAAvsAAABCAEcATABVAEUAMgA6AEQARABHACAAQwBvAG0AcABvAG4AZQBuAHQALwBTAHkAbQBiAG8AbABNAGEAbgBhAGcAZQByAAAAAHkAAANrA"
       "AAAIAD////7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4Ac"
       "wBwAGUAYwB0AG8AcgAAAAI4AAABrAAAAawA////AAAGvwAAA2sAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAwAAAAA="
@@ -146,9 +146,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lukas Bilal"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 27 13:57:27 2020"
-  RTWModifiedTimeStamp	  512488142
-  ModelVersionFormat	  "1.%<AutoIncrement:31>"
+  LastModifiedDate	  "Wed Jun 03 17:57:47 2020"
+  RTWModifiedTimeStamp	  513107778
+  ModelVersionFormat	  "1.%<AutoIncrement:32>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1693,8 +1693,8 @@ Stateflow {
     machine		    1
     name		    "StopWatch"
     windowPosition	    [199.5 216.75 417 348.75]
-    viewLimits		    [742.388 1811.688 248.89 887.957]
-    zoomFactor		    1.047
+    viewLimits		    [738.247 1959.847 327.52 978.72]
+    zoomFactor		    1.067
     screen		    [1 1 3200 1200 1.25]
     treeNode		    [0 3 0 0]
     viewObj		    2
@@ -1725,8 +1725,6 @@ Stateflow {
     ssIdNumber		    1
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
     firstTransition	    14
   }
   state {
@@ -1740,8 +1738,6 @@ Stateflow {
     ssIdNumber		    18
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    5
@@ -1754,8 +1750,6 @@ Stateflow {
     ssIdNumber		    4
     type		    OR_STATE
     decomposition	    SET_STATE
-    eml {
-    }
   }
   state {
     id			    6
@@ -1768,8 +1762,6 @@ Stateflow {
     ssIdNumber		    61
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    7
@@ -1783,8 +1775,6 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    3
-    eml {
-    }
     firstTransition	    20
   }
   state {
@@ -1799,8 +1789,6 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    2
-    eml {
-    }
     firstTransition	    22
   }
   state {
@@ -1815,8 +1803,6 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    1
-    eml {
-    }
     firstTransition	    24
   }
   state {
@@ -1830,8 +1816,6 @@ Stateflow {
     ssIdNumber		    95
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    11
@@ -1844,8 +1828,6 @@ Stateflow {
     ssIdNumber		    131
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    12
@@ -1858,8 +1840,6 @@ Stateflow {
     ssIdNumber		    117
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    13
@@ -1872,8 +1852,6 @@ Stateflow {
     ssIdNumber		    115
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   transition {
     id			    14
@@ -1915,7 +1893,7 @@ Stateflow {
     }
     midPoint		    [1372.7763 139.0978]
     chart		    2
-    dataLimits		    [1246.348 1579.741 136.047 199.713]
+    dataLimits		    [1246.348 1579.741 139.149 199.713]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -1968,7 +1946,7 @@ Stateflow {
     }
     midPoint		    [1597.6255 239.4525]
     chart		    2
-    dataLimits		    [1595.225 1600.025 214.68 256.225]
+    dataLimits		    [1595.226 1600.026 214.68 256.225]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -1993,7 +1971,7 @@ Stateflow {
     }
     midPoint		    [1672.1255 231.4525]
     chart		    2
-    dataLimits		    [1669.725 1674.525 214.68 256.225]
+    dataLimits		    [1669.726 1674.526 214.68 256.225]
     subviewer		    2
     drawStyle		    SMART
     slide {
